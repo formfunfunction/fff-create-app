@@ -1,5 +1,6 @@
 {
   "name": "fff-create-app",
+  "version": "1.0.0",
   "description": "Create a Nuxt.js App in seconds.",
   "bin": "lib/cli.js",
   "files": [
