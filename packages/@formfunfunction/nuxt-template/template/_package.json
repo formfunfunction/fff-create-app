@@ -9,9 +9,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    <%_ if (eslint) { _%>
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    <%_ } _%>
     <%_ if (test === 'ava') { _%>
     "test": "<%= test %>",
     "test:unit": "cross-env TEST=unit ava ./test/specs/**/*",
@@ -30,27 +28,18 @@
     <%_ if (axios) { _%>
     "@nuxtjs/axios": "^5.3.6",
     <%_ } _%>
-    <%_ if (pwa) { _%>
-    "@nuxtjs/pwa": "^3.0.0-0",
-    <%_ } _%>
-    <%_ if (dotenv) { _%>
     "@nuxtjs/dotenv": "^1.4.0",
-    <%_ } _%>
     "": ""
   },
   "devDependencies": {
-    <%_ if (eslint) { _%>
     "@nuxtjs/eslint-config": "^2.0.0",
     "@nuxtjs/eslint-module": "^1.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^6.1.0",
     "eslint-plugin-nuxt": ">=0.4.2",
-    <%_ } _%>
-    <%_ if (prettier) { _%>
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
     "prettier": "^1.19.1",
-    <%_ } _%>
     <%_ if (test !== 'none') { _%>
     "@vue/test-utils": "^1.0.0-beta.27",
     <%_ } _%>

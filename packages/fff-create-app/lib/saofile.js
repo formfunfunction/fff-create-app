@@ -9,11 +9,7 @@ const frameworksDir = join(templateDir, 'frameworks')
 module.exports = {
   prompts: require('./prompts'),
   templateData () {
-    const pwa = this.answers.features.includes('pwa')
-    const eslint = this.answers.linter.includes('eslint')
-    const prettier = this.answers.linter.includes('prettier')
     const axios = this.answers.features.includes('axios')
-    const dotenv = this.answers.features.includes('dotenv')
     const prismic = this.answers.features.includes('prismic')
     const esm = true
     const pm = this.answers.pm === 'yarn' ? 'yarn' : 'npm'
@@ -23,16 +19,12 @@ module.exports = {
     const edge = cliOptions.edge ? '-edge' : ''
 
     return {
-      pwa,
-      eslint,
-      prettier,
       axios,
       prismic,
       esm,
       edge,
       pm,
-      pmRun,
-      dotenv
+      pmRun
     }
   },
   actions () {
@@ -48,10 +40,7 @@ module.exports = {
     const actions = [{
       type: 'add',
       files: '**',
-      templateDir: join(templateDir, 'nuxt'),
-      filters: {
-        'static/icon.png': 'features.includes("pwa")'
-      }
+      templateDir: join(templateDir, 'nuxt')
     }]
 
     if (this.answers.test !== 'none') {
@@ -66,10 +55,7 @@ module.exports = {
       type: 'add',
       files: '*',
       filters: {
-        '_.eslintrc.js': 'linter.includes("eslint")',
-        '_.prettierrc': 'linter.includes("prettier")',
-        '_jsconfig.json': 'devTools.includes("jsconfig.json")',
-        '.env': 'features.includes("dotenv")'
+        '_jsconfig.json': 'devTools.includes("jsconfig.json")'
       },
       templateDir
     })
@@ -103,16 +89,14 @@ module.exports = {
 
     await this.npmInstall({ npmClient: this.answers.pm })
 
-    if (this.answers.linter.includes('eslint')) {
-      const options = ['run', 'lint', '--', '--fix']
-      if (this.answers.pm === 'yarn') {
-        options.splice(2, 1)
-      }
-      spawn.sync(this.answers.pm, options, {
-        cwd: this.outDir,
-        stdio: 'inherit'
-      })
+    const options = ['run', 'lint', '--', '--fix']
+    if (this.answers.pm === 'yarn') {
+      options.splice(2, 1)
     }
+    spawn.sync(this.answers.pm, options, {
+      cwd: this.outDir,
+      stdio: 'inherit'
+    })
 
     const chalk = this.chalk
     const isNewFolder = this.outDir !== process.cwd()

@@ -9,18 +9,14 @@ module.exports = {
   },
   extends: [
     '@nuxtjs',
-    <%_ if (prettier) { _%>
     'prettier',
     'prettier/vue',
     'plugin:prettier/recommended',
-    <%_ } _%>
     'plugin:nuxt/recommended'
   ],
-  <%_ if (prettier) { _%>
   plugins: [
     'prettier'
   ],
-  <%_ } _%>
   // add your custom rules here
   rules: {
   }

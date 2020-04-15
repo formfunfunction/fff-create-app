@@ -1,0 +1,32 @@
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background-color: $bright-white;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#app {
+  overflow: hidden;
+}
+
+.background_black {
+  background-color: $black;
+}

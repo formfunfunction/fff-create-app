@@ -1,0 +1,191 @@
+/**
+ * Based on milligram
+ * @link https://github.com/milligram/milligram
+ */
+.container {
+  padding-left: 5.5125rem;
+  padding-right: 5.5125rem; // 88.2px
+  @include mobile-l {
+    padding-left: 2.975rem;
+    padding-right: 2.975rem; // 47.6px
+  }
+  @include mobile-p {
+    padding-left: 2.7625rem;
+    padding-right: 2.7625rem; // 44.2px
+  }
+  &.container_narrow {
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+  }
+  &.container_vw {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}
+
+.row {
+  display: flex;
+
+  &.row_wrap {
+    flex-wrap: wrap;
+  }
+
+  @include mobile-l {
+    &.row_mobile-l_wrap {
+      flex-wrap: wrap;
+    }
+  }
+
+  &.row_top {
+    align-items: flex-start;
+  }
+
+	&.row_bottom {
+    align-items: flex-end;
+  }
+
+	&.row_center {
+    align-items: center;
+  }
+
+	&.row_stretch {
+    align-items: stretch;
+  }
+
+	&.row_baseline {
+    align-items: baseline;
+  }
+}
+
+.column {
+  flex: 1;
+  // Column Offsets
+  &.column_offset-10 {
+    margin-left: 10%;
+  }
+
+  &.column_offset-20 {
+    margin-left: 20%;
+  }
+
+  &.column_offset-25 {
+    margin-left: 25%;
+  }
+
+  &.column_offset-33,
+  &.column_offset-34 {
+    margin-left: 33.3333%;
+  }
+
+  &.column_offset-50 {
+    margin-left: 50%;
+  }
+
+  &.column_offset-66,
+  &.column_offset-67 {
+    margin-left: 66.6666%;
+  }
+
+  &.column_offset-75 {
+    margin-left: 75%;
+  }
+
+  &.column_offset-80 {
+    margin-left: 80%;
+  }
+
+  &.column_offset-90 {
+    margin-left: 90%;
+  }
+
+  // Explicit Column Percent Sizes
+  // By default each grid column will evenly distribute
+  // across the grid. However, you can specify individual
+  // columns to take up a certain size of the available area
+  &.column_10 {
+    flex: 0 0 10%;
+    max-width: 10%;
+  }
+
+  &.column_20 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+
+  &.column_25 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  &.column_33,
+  &.column_34 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+
+  &.column_40 {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+
+  &.column_50 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  &.column_60 {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+
+  &.column_66,
+  &.column_67 {
+    flex: 0 0 66.6666%;
+    max-width: 66.6666%;
+  }
+
+  &.column_75 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  &.column_80 {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+
+  &.column_90 {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+
+  .column_top {
+    align-self: flex-start;
+  }
+
+  .column_bottom {
+    align-self: flex-end;
+  }
+
+  .column_center {
+    align-self: center;
+  }
+
+  .column_tablet_100 {
+    @include tablet {
+      flex: 1;
+      flex-basis: 100%;
+      // width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .column_mobile-l_100 {
+    @include mobile-l {
+      flex: 1;
+      flex-basis: 100%;
+      // width: 100%;
+      max-width: 100%;
+    }
+  }
+}

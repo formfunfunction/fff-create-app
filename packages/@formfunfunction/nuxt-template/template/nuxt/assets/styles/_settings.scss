@@ -1,0 +1,41 @@
+// 01. Media Query Breakpoints
+$mobile-portrait-max: 478px;
+$mobile-landscape-max: 767px;
+$tablet-max: 991px;
+$large-min: 1280px;
+$xlarge-min: 1440px;
+$xxlarge-min: 1920px;
+
+// 02. Colours
+$yellow: #FFD068;
+$red: #F56D4C;
+$blue: #8BD1D0;
+$grey--dark: #2E3649;
+$grey: #485570;
+$grey--light: #9599A2;
+$grey--transparent: rgba(0, 7, 18, 0.6);
+$white: #DFE4E6;
+$bright-white: #F6F7F9;
+$black: #0A0A0A;
+
+// 03. Type
+$avenir: Avenir, Helvetica, Arial, sans-serif;
+$body-font-family: $avenir;
+$default-font-family: $body-font-family;
+$font-family: $body-font-family;
+$heading-font-family: $avenir;
+
+:root {
+  --color-yellow: #{$yellow};
+  --color-red: #{$red};
+  --color-blue: #{$blue};
+  --color-grey-dark: #{$grey--dark};
+  --color-grey: #{$grey};
+  --color-grey-light: #{$grey--light};
+  --color-grey-transparent: #{$grey--transparent};
+  --color-white: #{$white};
+  --color-black: #{$black};
+
+  --font-family: #{$avenir};
+  // Add additional font families used here
+}

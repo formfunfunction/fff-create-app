@@ -2,22 +2,53 @@ export default {
   mode: '<%= mode %>',
 
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
-      { hid: 'og:site_name', property: 'og:site_name', content: process.env.npm_package_name },
-      { hid: 'og:image', property: 'og:image', content: 'https://formfunfunction.com/og_image_01.png' },
-      { hid: 'og:image:width', property: 'og:image:width', content: '1200' },
-      { hid: 'og:image:height', property: 'og:image:height', content: '630' }
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1, user-scalable=no'
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: process.env.npm_package_description || ''
+      },
+
+      { name: 'apple-mobile-web-app-status-bar-style', content: 'black' },
+      { name: 'msapplication-navbutton-color', content: '#000' },
+      { name: 'msapplication-TileColor', content: '#000' },
+      { name: 'theme-color', content: '#000' },
+
+      { property: 'og:title', content: process.env.npm_package_name || '' },
+      {
+        property: 'og:image',
+        content: 'https://formfunfunction.com/og_image_01.png'
+      },
+      { property: 'og:image:width', content: '1200px' },
+      { property: 'og:image:height', content: '630px' },
+      {
+        property: 'og:image:alt',
+        content: process.env.npm_package_description || ''
+      },
+
+      { name: 'twitter:title', content: process.env.npm_package_name || '' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      {
+        name: 'twitter:image',
+        content: 'https://formfunfunction.com/og_image_01.png'
+      },
+      { name: 'twitter:site', content: '@formfunfunction' },
+      { name: 'twitter:creator', content: '@formfunfunction' },
+      {
+        name: 'twitter:description',
+        content: process.env.npm_package_description || ''
+      }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
   /*
@@ -41,10 +72,8 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    <%_ if (eslint) { _%>
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
-    <%_ } _%>
   ],
 
   /*
@@ -55,13 +84,8 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     <%_ } _%>
-    <%_ if (pwa) { _%>
-    '@nuxtjs/pwa',
-    <%_ } _%>
-    <%_ if (dotenv) { _%>
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv',
-    <%_ } _%>
+    '@nuxtjs/dotenv'
   ],
   <%_ if (axios) { _%>
   /*
