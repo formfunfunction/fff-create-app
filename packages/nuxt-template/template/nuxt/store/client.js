@@ -33,16 +33,6 @@ export const mutations = {
   }
 }
 
-export const actions = {
-  toggleMenu (context) {
-    context.commit('toggleMenu')
-  },
-
-  hideMenu (context) {
-    context.commit('hideMenu')
-  }
-}
-
 export const getters = {
   isMobile: (state) => {
     return state.window.width < state.breakpoints.tablet

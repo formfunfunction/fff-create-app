@@ -5,7 +5,7 @@ export default function ({ store }) {
   store.commit('client/setWindowWidth', vw)
   store.commit('client/setWindowHeight', vh)
 
-  window.addEventListener('resize', (e) => {
+  window.addEventListener('resize', () => {
     vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
     vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
     store.commit('client/setWindowWidth', vw)

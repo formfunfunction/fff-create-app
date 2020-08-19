@@ -1,191 +1,114 @@
-/**
- * Based on milligram
- * @link https://github.com/milligram/milligram
- */
-.container {
-  padding-left: 5.5125rem;
-  padding-right: 5.5125rem; // 88.2px
+// ===================================================================
+// Flexbox Grid Mixins (Simplified)
+// Version 0.2.1
+// Description: Sass Mixins to generate Flexbox grid
+// Author: thingsym
+// GitHub: https://github.com/thingsym/flexbox-grid-mixins
+// MIT License
+// ===================================================================
+
+@charset 'utf-8';
+
+@mixin container($width: $container-width) {
+  margin: 0 auto;
+  padding-left: $container-gutter-desktop;
+  padding-right: $container-gutter-desktop;
+  width: 100%;
+
+  @if unitless($width) == true or unit($width) == 'px' {
+    max-width: $width + $container-gutter-desktop * 2;
+  } @else {
+    max-width: calc(#{$width} + #{$container-gutter-desktop * 2});
+  }
+
+  @include tablet {
+    @if unitless($width) == true or unit($width) == 'px' {
+      max-width: $width + $container-gutter-tablet * 2;
+    } @else {
+      max-width: calc(#{$width} + #{$container-gutter-tablet * 2});
+    }
+
+    padding-left: $container-gutter-tablet;
+    padding-right: $container-gutter-tablet;
+  }
+
   @include mobile-l {
-    padding-left: 2.975rem;
-    padding-right: 2.975rem; // 47.6px
-  }
-  @include mobile-p {
-    padding-left: 2.7625rem;
-    padding-right: 2.7625rem; // 44.2px
-  }
-  &.container_narrow {
-    padding-left: 0.875rem;
-    padding-right: 0.875rem;
-  }
-  &.container_vw {
-    padding-left: 10vw;
-    padding-right: 10vw;
+    @if unitless($width) == true or unit($width) == 'px' {
+      max-width: $width + $container-gutter-mobile * 2;
+    } @else {
+      max-width: calc(#{$width} + #{$container-gutter-mobile * 2});
+    }
+
+    padding-left: $container-gutter-mobile;
+    padding-right: $container-gutter-mobile;
   }
 }
 
-.row {
+@mixin grid($flex-direction: null, $flex-wrap: null, $flex-flow: null, $justify-content: null, $align-items: null, $align-content: null, $gutter: null) {
   display: flex;
 
-  &.row_wrap {
-    flex-wrap: wrap;
+  @if $flex-direction {
+    flex-direction: $flex-direction;
   }
 
-  @include mobile-l {
-    &.row_mobile-l_wrap {
-      flex-wrap: wrap;
-    }
+  @if $flex-wrap {
+    flex-wrap: $flex-wrap;
   }
 
-  &.row_top {
-    align-items: flex-start;
+  @if $flex-flow {
+    flex-flow: $flex-flow;
   }
 
-	&.row_bottom {
-    align-items: flex-end;
+  @if $justify-content {
+    justify-content: $justify-content;
   }
 
-	&.row_center {
-    align-items: center;
+  @if $align-items {
+    align-items: $align-items;
   }
 
-	&.row_stretch {
-    align-items: stretch;
+  @if $align-content {
+    align-content: $align-content;
   }
 
-	&.row_baseline {
-    align-items: baseline;
+  @if $gutter {
+    margin-left: $gutter / 2 * -1;
+    margin-right: $gutter / 2 * -1;
   }
+
+  @content;
 }
 
-.column {
-  flex: 1;
-  // Column Offsets
-  &.column_offset-10 {
-    margin-left: 10%;
-  }
+@mixin grid-col($col: null, $col-offset: null, $gutter: $grid-gutter, $flex-grow: 0, $flex-shrink: 1, $flex-basis: auto) {
+  @if type-of($col) == number and unitless($col) == true {
+    $flex-shrink: 0;
+    $flex-basis: percentage($col / $grid-columns);
 
-  &.column_offset-20 {
-    margin-left: 20%;
-  }
-
-  &.column_offset-25 {
-    margin-left: 25%;
-  }
-
-  &.column_offset-33,
-  &.column_offset-34 {
-    margin-left: 33.3333%;
-  }
-
-  &.column_offset-50 {
-    margin-left: 50%;
-  }
-
-  &.column_offset-66,
-  &.column_offset-67 {
-    margin-left: 66.6666%;
-  }
-
-  &.column_offset-75 {
-    margin-left: 75%;
-  }
-
-  &.column_offset-80 {
-    margin-left: 80%;
-  }
-
-  &.column_offset-90 {
-    margin-left: 90%;
-  }
-
-  // Explicit Column Percent Sizes
-  // By default each grid column will evenly distribute
-  // across the grid. However, you can specify individual
-  // columns to take up a certain size of the available area
-  &.column_10 {
-    flex: 0 0 10%;
-    max-width: 10%;
-  }
-
-  &.column_20 {
-    flex: 0 0 20%;
-    max-width: 20%;
-  }
-
-  &.column_25 {
-    flex: 0 0 25%;
-    max-width: 25%;
-  }
-
-  &.column_33,
-  &.column_34 {
-    flex: 0 0 33.3333%;
-    max-width: 33.3333%;
-  }
-
-  &.column_40 {
-    flex: 0 0 40%;
-    max-width: 40%;
-  }
-
-  &.column_50 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
-  &.column_60 {
-    flex: 0 0 60%;
-    max-width: 60%;
-  }
-
-  &.column_66,
-  &.column_67 {
-    flex: 0 0 66.6666%;
-    max-width: 66.6666%;
-  }
-
-  &.column_75 {
-    flex: 0 0 75%;
-    max-width: 75%;
-  }
-
-  &.column_80 {
-    flex: 0 0 80%;
-    max-width: 80%;
-  }
-
-  &.column_90 {
-    flex: 0 0 90%;
-    max-width: 90%;
-  }
-
-  .column_top {
-    align-self: flex-start;
-  }
-
-  .column_bottom {
-    align-self: flex-end;
-  }
-
-  .column_center {
-    align-self: center;
-  }
-
-  .column_tablet_100 {
-    @include tablet {
-      flex: 1;
-      flex-basis: 100%;
-      // width: 100%;
-      max-width: 100%;
+    @if $gutter and unit($gutter) == '%' {
+      $flex-basis: $flex-basis - $gutter;
+    } @else if $gutter and unitless($gutter) == false {
+      $flex-basis: calc(#{$flex-basis} - #{$gutter});
     }
+
+    @if $col-offset and unit($col-offset) == '%' {
+      $flex-basis: $flex-basis + $col-offset;
+    } @else if $col-offset and unitless($col-offset) == false {
+      $flex-basis: calc(#{$flex-basis} + #{$col-offset});
+    }
+  } @else if type-of($col) == number and unitless($col) == false {
+    $flex-grow: 0;
+    $flex-shrink: 0;
+    $flex-basis: $col;
   }
 
-  .column_mobile-l_100 {
-    @include mobile-l {
-      flex: 1;
-      flex-basis: 100%;
-      // width: 100%;
-      max-width: 100%;
-    }
+  flex-basis: $flex-basis;
+  flex-grow: $flex-grow;
+  flex-shrink: $flex-shrink;
+
+  @if $gutter and unitless($gutter) == false {
+    margin-left: $gutter / 2;
+    margin-right: $gutter / 2;
   }
+
+  @content;
 }

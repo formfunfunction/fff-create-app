@@ -4,29 +4,27 @@
 }
 
 @mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
-  $u1: unit($min-vw);
-  $u2: unit($max-vw);
-  $u3: unit($min-font-size);
-  $u4: unit($max-font-size);
+  $unit-1: unit($min-vw);
+  $unit-2: unit($max-vw);
+  $unit-3: unit($min-font-size);
+  $unit-4: unit($max-font-size);
 
-  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
-    & {
-      font-size: $min-font-size;
-      @media screen and (min-width: $min-vw) {
-        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
-      }
-      @media screen and (min-width: $max-vw) {
-        font-size: $max-font-size;
-      }
+  @if $unit-1 == $unit-2 and $unit-1 == $unit-3 and $unit-1 == $unit-4 {
+    font-size: $min-font-size;
+    @media screen and (min-width: $min-vw) {
+      font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+    }
+    @media screen and (min-width: $max-vw) {
+      font-size: $max-font-size;
     }
   }
 }
 
 @mixin body-fluid-type() {
-  $min_font: 14px;
-  $max_font: 16px;
+  $min-font: 14px;
+  $max-font: 16px;
 
-  @include fluid-type($mobile-landscape-max, $tablet-max, $min_font, $max_font);
+  @include fluid-type($mobile-landscape-max, $tablet-max, $min-font, $max-font);
 }
 
 @mixin type($min, $max) {
@@ -34,20 +32,18 @@
 }
 
 @mixin vw-clamped-size($param, $min, $max) {
-  $u1: unit($mobile-landscape-max);
-  $u2: unit($tablet-max);
-  $u3: unit($min);
-  $u4: unit($max);
+  $unit-1: unit($mobile-landscape-max);
+  $unit-2: unit($tablet-max);
+  $unit-3: unit($min);
+  $unit-4: unit($max);
 
-  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
-    & {
-      #{$param}: $min;
-      @media screen and (min-width: $mobile-landscape-max) {
-        #{$param}: calc(#{$min} + #{strip-unit($max - $min)} * ((100vw - #{$mobile-landscape-max}) / #{strip-unit($tablet-max - $mobile-landscape-max)}));
-      }
-      @media screen and (min-width: $tablet-max) {
-        #{$param}: $max;
-      }
+  @if $unit-1 == $unit-2 and $unit-1 == $unit-3 and $unit-1 == $unit-4 {
+    #{$param}: $min;
+    @media screen and (min-width: $mobile-landscape-max) {
+      #{$param}: calc(#{$min} + #{strip-unit($max - $min)} * ((100vw - #{$mobile-landscape-max}) / #{strip-unit($tablet-max - $mobile-landscape-max)}));
+    }
+    @media screen and (min-width: $tablet-max) {
+      #{$param}: $max;
     }
   }
 }

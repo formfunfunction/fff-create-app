@@ -1,10 +1,20 @@
 export default {
-  mode: '<%= mode %>',
-
   /*
-   ** Headers of the page
-   */
+  ** Nuxt rendering mode
+  ** See https://nuxtjs.org/api/configuration-mode
+  */
+  mode: '<%= mode %>',
+  /*
+  ** Nuxt target
+  ** See https://nuxtjs.org/api/configuration-target
+  */
+  target: '<%= target %>',
+  /*
+  ** Headers of the page
+  ** See https://nuxtjs.org/api/configuration-head
+  */
   head: {
+    titleTemplate: '%s - ' + process.env.npm_package_name,
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
@@ -50,51 +60,51 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
-
   /*
   ** Customize the progress-bar color
   */
   loading: { color: '#333' },
-
   /*
    ** Global CSS
    */
   css: ['@/assets/styles/main.scss'],
-
   /*
-   ** Plugins to load before mounting the App
-   */
+  ** Plugins to load before mounting the App
+  ** https://nuxtjs.org/guide/plugins
+  */
   plugins: [
     { src: '~/plugins/client-init', ssr: false }
   ],
-
+  /*
+  ** Auto import components
+  ** See https://nuxtjs.org/api/configuration-components
+  */
+  components: true,
   /*
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    '@nuxt/typescript-build',
+    // Doc: https://github.com/nuxt-community/stylelint-module
+    '@nuxtjs/stylelint-module',
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module',
+    '@nuxtjs/eslint-module'
   ],
-
   /*
   ** Nuxt.js modules
   */
   modules: [
-    <%_ if (axios) { _%>
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    <%_ } _%>
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv'
   ],
-  <%_ if (axios) { _%>
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
   },
-  <%_ } _%>
   /*
   ** Build configuration
   */
@@ -102,7 +112,6 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
-    }
+    extend () {}
   }
 }

@@ -7,35 +7,33 @@ $xlarge-min: 1440px;
 $xxlarge-min: 1920px;
 
 // 02. Colours
-$yellow: #FFD068;
-$red: #F56D4C;
-$blue: #8BD1D0;
-$grey--dark: #2E3649;
+$yellow: #ffd068;
+$red: #f56d4c;
+$blue: #8bd1d0;
+$grey--dark: #2e3649;
 $grey: #485570;
-$grey--light: #9599A2;
+$grey--light: #9599a2;
 $grey--transparent: rgba(0, 7, 18, 0.6);
-$white: #DFE4E6;
-$bright-white: #F6F7F9;
-$black: #0A0A0A;
+$white: #dfe4e6;
+$bright-white: #f6f7f9;
+$black: #0a0a0a;
+$white: #fff;
+
+$body-background-color: $bright-white;
+$default-font-color: $grey;
+$default-hover-color: $grey--dark;
 
 // 03. Type
-$avenir: Avenir, Helvetica, Arial, sans-serif;
+$avenir: avenir, helvetica, arial, sans-serif;
 $body-font-family: $avenir;
 $default-font-family: $body-font-family;
 $font-family: $body-font-family;
 $heading-font-family: $avenir;
 
-:root {
-  --color-yellow: #{$yellow};
-  --color-red: #{$red};
-  --color-blue: #{$blue};
-  --color-grey-dark: #{$grey--dark};
-  --color-grey: #{$grey};
-  --color-grey-light: #{$grey--light};
-  --color-grey-transparent: #{$grey--transparent};
-  --color-white: #{$white};
-  --color-black: #{$black};
-
-  --font-family: #{$avenir};
-  // Add additional font families used here
-}
+// 04. Grid
+$grid-columns: 12;
+$grid-gutter: 30px;
+$container-width: 1440px;
+$container-gutter-mobile: $grid-gutter;
+$container-gutter-tablet: 50px;
+$container-gutter-desktop: 70px;

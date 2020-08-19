@@ -1,158 +1,34 @@
 // Fallback font
 body {
+  color: $default-font-color;
   font-family: $body-font-family;
-  font-size: 100%;
-  @extend .text_regular;
+  font-size: 1.1375rem;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 a {
+  color: $default-font-color;
   font-weight: 700;
-  color: $grey;
   text-decoration: underline;
-  margin-top: 0;
-  margin-bottom: 0.625rem;
+
   &:hover {
-    color: $grey--dark;
+    color: $default-hover-color;
   }
 }
 
-strong {
-  font-weight: 700;
-}
-
-// Reset type styles
-// Sometimes the styling of headings doesn't match the document tree so we
-// remove all heading styles and instead use classes for styling.
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  @extend .text_regular;
+  font-family: $heading-font-family;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  margin-top: 0;
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: 0.625rem;
-}
+  margin-top: 0; }
 
-// Core heading styles
-.heading_hero, .heading_xl, .heading_l, .heading, .heading_s, .heading_xs {
-  display: block;
-}
-.heading_hero {
-  font-size: 7vw;
-  line-height: 0.8;
-  @include mobile-p {
-    font-size: 16vw;
-  }
-}
-.heading_xl {
-  font-size: 3.5rem;
-  line-height: 1.2;
-  @include mobile-l {
-    font-size: 2.5375rem;
-  }
-}
-.heading_l {
-  line-height: 1.1;
-  font-size: 3.5rem;
-  @include mobile-l {
-    font-size: 2.5375rem;
-  }
-  @include mobile-p {
-    font-size: 2rem
-  }
-}
-.heading {
-  line-height: 1.1;
-  font-size: 2.625rem;
-  @include tablet {
-    font-size: 1.75rem;
-  }
-  @include mobile-l {
-    font-size: 1.3125rem
-  }
-  @include mobile-p {
-    font-size: 1.21875rem
-  }
-}
-.heading_s {
-  font-size: 2.1875rem;
-  @include mobile-l {
-    font-size: 1.5rem;
-  }
-  // @include mobile-p {
-  //   font-size: 0.875rem;
-  // }
-}
-.heading_xs {
-  margin-top: 45px;
-  margin-bottom: 10px;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-}
-
-// Core heading styles
-.heading_not-responsive {
-  line-height: 1.1;
-  font-size: 2.625rem;
-}
-
-.strong, .text_strong {
-  font-weight: 700;
-}
-
-.xstrong {
-  font-weight: 900;
-}
-
-.text_regular {
-  font-size: 1.1375rem;
-  color: $grey;
-  font-weight: 400;
-  line-height: 1.2;
-}
-
-.text_small {
-  font-size: 0.875rem;
-  line-height: 1.4285714286;
-}
-
-.text_white {
-  color: $white;
-}
-
-.text_grey-dark {
-  color: $grey--dark;
-}
-
-.text_grey-light {
-  color: $grey--light;
-}
-
-.text_grey-transparent {
-  color: $grey--transparent;
-}
-
-.richtext {
-  h2 {
-    @extend .heading_xl;
-  }
-  h3 {
-    @extend .heading_l;
-  }
-  h4 {
-    @extend .heading;
-  }
-  h5 {
-    @extend .heading_s;
-  }
-  h6 {
-    @extend .heading_xs;
-  }
-}
-
-// Include font-face imports here

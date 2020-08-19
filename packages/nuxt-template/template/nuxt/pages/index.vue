@@ -1,39 +1,34 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        <%= name %>
-      </h1>
-      <h2 class="subtitle">
-        <%= description %>
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
-  </div>
+  <Intro>
+    <Heading content="<%= name %>" />
+    <p>
+      Welcome to the
+      <a
+        href="https://formfunfunction.com/"
+        target="_blank"
+        rel="noreferrer"
+      >formfunfunction</a>
+      Nuxt starter project. Head to<Code>/src/pages/index.vue</Code> to get
+      stuck in.
+    </p>
+  </Intro>
 </template>
+<script lang="ts">
+import Vue from 'vue'
+import Intro from '@/components/intro/Intro.vue'
+import Code from '@/components/intro/Code.vue'
+import Heading from '@/components/intro/Heading.vue'
 
-<script>
-import Logo from '~/components/Logo.vue'
-
-export default {
+export default Vue.extend({
+  name: 'Home',
   components: {
-    Logo
+    Intro,
+    Code,
+    Heading
+  },
+
+  head: {
+    title: 'Hello world!'
   }
-}
+})
 </script>

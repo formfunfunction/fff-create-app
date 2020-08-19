@@ -1,15 +1,8 @@
 // 01. Settings
-@import '_settings';
-
-// 02. Mixins
-@import 'mixins/fluid-type';
-@import 'mixins/media-queries';
+@import 'config';
 
 // 03. Core
 @import 'core/reset';
 @import 'core/base';
 @import 'core/grid';
 @import 'core/type';
-
-// 04. Components
-// Import components here
