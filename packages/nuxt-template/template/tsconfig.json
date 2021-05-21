@@ -14,18 +14,21 @@
     "strict": true,
     "noEmit": true,
     "experimentalDecorators": true,
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
       "~/*": [
-        "./*"
+        "src/*"
       ],
       "@/*": [
-        "./*"
+        "src/*"
       ]
     },
     "types": [
-      "@types/node",
-      "@nuxt/types"
+      "@nuxt/types",
+      <%_ if (axios) { _%>
+      "@nuxtjs/axios",
+      <%_ } _%>
+      "@types/node"
     ]
   },
   "exclude": [

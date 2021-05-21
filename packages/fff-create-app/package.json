@@ -1,28 +1,26 @@
 {
   "name": "fff-create-app",
-  "version": "1.1.2",
+  "version": "3.6.0",
   "description": "Create a Nuxt.js App, with opinionated defaults.",
   "bin": "lib/cli.js",
   "files": [
     "lib"
   ],
   "dependencies": {
-    "@formfunfunction/nuxt-template": "^1.1.2",
-    "cac": "^6.6.1",
+    "cac": "^6.7.2",
     "chalk": "^4.1.0",
+    "cna-template": "^3.6.0",
     "cross-spawn": "^7.0.3",
-    "envinfo": "^7.7.2",
-    "lodash": "^4.17.19",
+    "envinfo": "^7.7.4",
+    "lodash": "^4.17.21",
     "sao": "^1.7.1",
     "validate-npm-package-name": "^3.0.0"
   },
   "authors": [
-    "Egoist <0x142857@gmail.com>",
-    "Nuxt team <team@nuxtjs.org>",
-    "Clark Du <clark.duxin@gmail.com>"
+    "Jamie Morgan-Ward <jamie@formfunfunction.com>"
   ],
   "license": "MIT",
   "engines": {
-    "node": ">=10.20.0"
+    "node": ">=v10.24.0"
   }
 }

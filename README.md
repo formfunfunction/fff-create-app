@@ -4,45 +4,50 @@
 [![NPM downloads](https://img.shields.io/npm/dm/create-nuxt-app.svg?style=flat)](https://npmjs.com/package/create-nuxt-app)
 [![GitHub Action](https://github.com/nuxt/create-nuxt-app/workflows/ci/badge.svg?branch=master)](https://github.com/nuxt/create-nuxt-app/actions?query=branch%3Amaster++)
 
-> Quickly bootstrap a Vue project, based on our own starter templates.
-
-<details><summary>Preview</summary>
-
-![preview](https://ooo.0o0.ooo/2017/08/05/5984b16ed9749.gif)
-</details>
+> Create a [Nuxt.js](https://nuxtjs.org) project in seconds
 
 ## Usage
 
 Make sure you have [npx](https://www.npmjs.com/package/npx) installed (`npx` is shipped by default since [npm](https://www.npmjs.com/get-npm) `5.2.0`)
 
 ```bash
-npx @formfunfunction/create-app <my-project>
+npx fff-create-app <my-project>
+```
+
+Or starting with npm v6.1 you can do:
+
+```bash
+npm init fff-create-app@latest <my-project>
+```
+
+Or with [yarn](https://yarnpkg.com/en/):
+
+```bash
+yarn create fff-create-app <my-project>
 ```
 
 ## Features :tada:
 
-1. Choose the package manager
-    - Yarn
-    - Npm
-2. Choose Nuxt.js modules:
-    - [Axios](https://github.com/nuxt-community/axios-module)
-    - [Progressive Web App (PWA) Support](https://github.com/nuxt-community/pwa-module)
-3. Choose linting tools:
+1. Nuxt.js modules:
+    - [Axios - Promise based HTTP client](https://github.com/nuxt-community/axios-module)
+    - [Progressive Web App (PWA)](https://github.com/nuxt-community/pwa-module)
+2. Linting tools:
     - [ESLint](https://github.com/nuxt/eslint-config)
     - [Prettier](https://github.com/prettier/prettier)
-4. Check the features needed for your project:
-    - [PWA](https://pwa.nuxtjs.org/)
-    - Linter / Formatter
-    - [Prettier](https://prettier.io/)
-    - [Axios](https://github.com/nuxt-community/axios-module)
-5. Choose your favorite test framework:
+    - [StyleLint](https://github.com/stylelint/stylelint)
+3. Testing framework:
     - None
     - [Jest](https://github.com/facebook/jest)
     - [AVA](https://github.com/avajs/ava)
-6. Choose rendering mode
+    - [WebdriverIO](https://webdriver.io)
+    - [Nightwatch](https://nightwatchjs.org)
+4. Rendering mode
     - [Universal (SSR / Static)](https://nuxtjs.org/guide/#server-rendered-universal-ssr-)
     - [SPA](https://nuxtjs.org/guide/#single-page-applications-spa-)
-7.  Choose development tools
+5. Deployment target
+    - [Server (Node.js hosting)](https://nuxtjs.org/api/configuration-target)
+    - [Static (Static/JAMStack hosting)](https://nuxtjs.org/api/configuration-target)
+6. Development tools
     - [jsconfig.json](https://code.visualstudio.com/docs/languages/jsconfig)
 
 ## CLI Options

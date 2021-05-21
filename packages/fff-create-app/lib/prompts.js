@@ -5,6 +5,30 @@ module.exports = [
     default: '{outFolder}'
   },
   {
+    name: 'features',
+    message: 'Nuxt.js modules:',
+    type: 'checkbox',
+    pageSize: 10,
+    choices: [
+      { name: 'Axios - Promise based HTTP client', value: 'axios' },
+      { name: 'Progressive Web App (PWA)', value: 'pwa' }
+    ],
+    default: []
+  },
+  {
+    name: 'test',
+    message: 'Testing framework:',
+    type: 'list',
+    choices: [
+      { name: 'None', value: 'none' },
+      { name: 'Jest', value: 'jest' },
+      { name: 'AVA', value: 'ava' },
+      { name: 'WebdriverIO', value: 'webdriverio' },
+      { name: 'Nightwatch', value: 'nightwatch' }
+    ],
+    default: 'jest'
+  },
+  {
     name: 'mode',
     message: 'Rendering mode:',
     type: 'list',
@@ -20,7 +44,7 @@ module.exports = [
     type: 'list',
     choices: [
       { name: 'Server (Node.js hosting)', value: 'server' },
-      { name: 'Static (Static/JAMStack hosting)', value: 'static' }
+      { name: 'Static (Static/Jamstack hosting)', value: 'static' }
     ],
     default: 'server'
   }

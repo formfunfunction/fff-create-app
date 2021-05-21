@@ -1,6 +1,7 @@
+@use "sass:math";
 
 @function strip-unit($value) {
-  @return $value / ($value * 0 + 1);
+  @return math.div($value, ($value * 0 + 1));
 }
 
 @mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
@@ -40,7 +41,7 @@
   @if $unit-1 == $unit-2 and $unit-1 == $unit-3 and $unit-1 == $unit-4 {
     #{$param}: $min;
     @media screen and (min-width: $mobile-landscape-max) {
-      #{$param}: calc(#{$min} + #{strip-unit($max - $min)} * ((100vw - #{$mobile-landscape-max}) / #{strip-unit($tablet-max - $mobile-landscape-max)}));
+      #{$param}: calc(#{$min} + #{strip-unit($max - $min)} * (math.div((100vw - #{$mobile-landscape-max}), #{strip-unit($tablet-max - $mobile-landscape-max)})));
     }
     @media screen and (min-width: $tablet-max) {
       #{$param}: $max;

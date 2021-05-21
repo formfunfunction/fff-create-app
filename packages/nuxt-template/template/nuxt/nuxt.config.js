@@ -1,118 +1,94 @@
 export default {
-  /*
-   ** Nuxt rendering mode
-   ** See https://nuxtjs.org/api/configuration-mode
-   */
-  mode: '<%= mode %>',
-  /*
-   ** Nuxt target
-   ** See https://nuxtjs.org/api/configuration-target
-   */
+  <%_ if (mode === 'spa') { _%>
+  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
+  ssr: false,
+
+  <%_ } _%><%_ if (target === 'static') { _%>
+  // Target: https://go.nuxtjs.dev/config-target
   target: '<%= target %>',
-  /*
-   ** Headers of the page
-   ** See https://nuxtjs.org/api/configuration-head
-   */
+
+  <%_ } _%>
+  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - ' + process.env.npm_package_name,
-    title: process.env.npm_package_name || '',
+    titleTemplate: '%s - <%= name %>',
+    title: '<%= name %>',
+    <%_ if (!pwa) { _%>
+    htmlAttrs: {
+      lang: 'en'
+    },
+    <%_ } _%>
     meta: [
       { charset: 'utf-8' },
-      {
-        name: 'viewport',
-        content: 'width=device-width, initial-scale=1, user-scalable=no'
-      },
-      {
-        hid: 'description',
-        name: 'description',
-        content: process.env.npm_package_description || ''
-      },
-
-      { name: 'apple-mobile-web-app-status-bar-style', content: 'black' },
-      { name: 'msapplication-navbutton-color', content: '#000' },
-      { name: 'msapplication-TileColor', content: '#000' },
-      { name: 'theme-color', content: '#000' },
-
-      { property: 'og:title', content: process.env.npm_package_name || '' },
-      {
-        property: 'og:image',
-        content: 'https://formfunfunction.com/og_image_01.png'
-      },
-      { property: 'og:image:width', content: '1200px' },
-      { property: 'og:image:height', content: '630px' },
-      {
-        property: 'og:image:alt',
-        content: process.env.npm_package_description || ''
-      },
-
-      { name: 'twitter:title', content: process.env.npm_package_name || '' },
-      { name: 'twitter:card', content: 'summary_large_image' },
-      {
-        name: 'twitter:image',
-        content: 'https://formfunfunction.com/og_image_01.png'
-      },
-      { name: 'twitter:site', content: '@formfunfunction' },
-      { name: 'twitter:creator', content: '@formfunfunction' },
-      {
-        name: 'twitter:description',
-        content: process.env.npm_package_description || ''
-      }
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: '' }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ]
   },
-  /*
-   ** Customize the progress-bar color
-   */
+
+  // Customize the progress-bar color: https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-loading
   loading: { color: '#333' },
-  /*
-   ** Global CSS
-   */
+
+  // Global CSS: https://go.nuxtjs.dev/config-css
   css: ['@/assets/styles/main.scss'],
-  /*
-   ** Plugins to load before mounting the App
-   ** https://nuxtjs.org/guide/plugins
-   */
+
+  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [{ src: '~/plugins/client-init', ssr: false }],
-  /*
-   ** Auto import components
-   ** See https://nuxtjs.org/api/configuration-components
-   */
+
+  // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
-  /*
-   ** Nuxt.js dev-modules
-   */
+
+  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
-    // Doc: https://github.com/nuxt-community/stylelint-module
+    // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
-    // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module',
-    // Doc: https://github.com/nuxt-community/dotenv-module
-    ['@nuxtjs/dotenv', { path: './' }]
   ],
-  /*
-   ** Nuxt.js modules
-   */
+
+  // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    <%_ if (axios) { _%>
+    // https://go.nuxtjs.dev/axios
+    '@nuxtjs/axios',
+    <%_ } _%>
+    <%_ if (pwa) { _%>
+    // https://go.nuxtjs.dev/pwa
+    '@nuxtjs/pwa',
+    <%_ } _%>
   ],
-  /*
-   ** Axios module configuration
-   ** See https://axios.nuxtjs.org/options
-   */
+  <%_ if (axios) { _%>
+
+  // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
-  /*
-   ** Use src/ directory to keep consistent file structure across frameworks
-   */
+  <%_ } _%>
+  <%_ if (pwa) { _%>
+
+  // PWA module configuration: https://go.nuxtjs.dev/pwa
+  pwa: {
+    manifest: {
+      lang: 'en'
+    },
+    meta: {
+      appleStatusBarStyle: 'black',
+      theme_color: '#000',
+      name: '<%= name %>',
+      ogHost: 'https://formfunfunction.com',
+      ogImage: {
+        path: '/og_image_01.png',
+        width: '1200px',
+        height: '630px'
+      },
+      twitterCard: 'summary_large_image',
+      twitterSite: '@formfunfunction',
+      twitterCreator: '@formfunfunction'
+    }
+  },
+  <%_ } _%>
+  // Use src/ directory to keep consistent file structure across frameworks
   srcDir: 'src/',
-  /*
-   ** Build configuration
-   */
-  build: {
-    /*
-     ** You can extend webpack config here
-     */
-    extend () {}
-  }
+
+  // Build Configuration: https://go.nuxtjs.dev/config-build
+  build: {}
 }

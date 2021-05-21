@@ -1,5 +1,5 @@
 <template>
-  <header class="header"></header>
+  <header class="header" />
 </template>
 
 <style lang="scss" scoped>
@@ -7,6 +7,7 @@
 
 .header {
   @include type(14px, 18px);
+
   display: flex;
 }
 </style>

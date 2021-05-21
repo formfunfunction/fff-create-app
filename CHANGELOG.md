@@ -3,254 +3,185 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [1.1.2](https://github.com/formfunfunction/fff-create-app/compare/v1.1.0...v1.1.2) (2020-08-22)
-
-**Note:** Version bump only for package fff-create-app
-
-
-
-
-
-## [1.1.1](https://github.com/formfunfunction/fff-create-app/compare/v1.1.0...v1.1.1) (2020-08-22)
-
-**Note:** Version bump only for package fff-create-app
-
-
-
-
-
-# 1.1.0 (2020-08-19)
+# [3.6.0](https://github.com/nuxt/create-nuxt-app/compare/v3.5.2...v3.6.0) (2021-03-19)
 
 
 ### Bug Fixes
 
-* add coverage config to jest setup ([#198](https://github.com/formfunfunction/fff-create-app/issues/198)) ([85a29ec](https://github.com/formfunfunction/fff-create-app/commit/85a29ec62232035395ca94e9718205a21b2d8671))
-* add missing explicit dependency ([#169](https://github.com/formfunfunction/fff-create-app/issues/169)) ([19b73bb](https://github.com/formfunfunction/fff-create-app/commit/19b73bb25c2b2cd1867fc213c8b384a4b4bb9261))
-* adonis lint errors ([c010b3c](https://github.com/formfunfunction/fff-create-app/commit/c010b3cee73afb7d74f4545b5f94ea51f4c3ead5))
-* await ready before listen ([c5520ec](https://github.com/formfunfunction/fff-create-app/commit/c5520ec80d7029d48057d07e330bcbe2aa6461a4))
-* axios documentation link in config template ([#161](https://github.com/formfunfunction/fff-create-app/issues/161)) ([78dc48e](https://github.com/formfunfunction/fff-create-app/commit/78dc48eac3168aebfddd21321ac48c32fb0c9b2b))
-* Cannot find module 'nuxt-edge' ([#87](https://github.com/formfunfunction/fff-create-app/issues/87)) ([4dcfc82](https://github.com/formfunfunction/fff-create-app/commit/4dcfc828cab665b8d5aa13254e37b643f6ff9360))
-* Cannot find module 'nuxt-edge' ([#91](https://github.com/formfunfunction/fff-create-app/issues/91)) ([92c0972](https://github.com/formfunfunction/fff-create-app/commit/92c097275fed6b1c8a5b00315b4211a15cbd8ded))
-* comment vuetify/variables.scss with doc link ([#318](https://github.com/formfunfunction/fff-create-app/issues/318)) ([e4f1d64](https://github.com/formfunfunction/fff-create-app/commit/e4f1d645243ad24997fdbaee6d21b1ade160ddd6))
-* disable no cjs rule ([#203](https://github.com/formfunfunction/fff-create-app/issues/203)) ([9e29192](https://github.com/formfunfunction/fff-create-app/commit/9e291922edbd03d83ca514e3c94144162f28c147))
-* lint-staged should only check staged files ([b516d23](https://github.com/formfunfunction/fff-create-app/commit/b516d234d733d0b5f2ddf0e1219d4eadef8e9d40))
-* update prompts to add static in universal ([#462](https://github.com/formfunfunction/fff-create-app/issues/462)) ([71d84b1](https://github.com/formfunfunction/fff-create-app/commit/71d84b16a57147f159ce0c858a0b7bfa757d7a4b))
-* vuetify footer fixed attribute toggling ([dae1734](https://github.com/formfunfunction/fff-create-app/commit/dae17340f5a3b905aad655a622d6bab21aacbafe))
-* **ava:** no tests found in test/ava.setup.js ([#426](https://github.com/formfunfunction/fff-create-app/issues/426)) ([c1afad4](https://github.com/formfunfunction/fff-create-app/commit/c1afad42ddf0206af303df64e0a8a7bd9c67e108))
-* cannot find module babel-core ([#310](https://github.com/formfunfunction/fff-create-app/issues/310)) ([cf1dbde](https://github.com/formfunfunction/fff-create-app/commit/cf1dbdeb9a75ef42a0a735ea037104ad3d255b90))
-* Duplicate key 'devModules' ([#273](https://github.com/formfunfunction/fff-create-app/issues/273)) ([e7ef3a9](https://github.com/formfunfunction/fff-create-app/commit/e7ef3a944e908b04becc90d877dfbb8f8e421a53))
-* express server file ([b5dca09](https://github.com/formfunfunction/fff-create-app/commit/b5dca09f8d272522c06ab149fa100e2f4fc35581))
-* Fix .env not existing in Adonis framework ([898a504](https://github.com/formfunfunction/fff-create-app/commit/898a5047f2b9cd65186056ac144d356fd0e92daa))
-* Fix CircleCI ([986a61a](https://github.com/formfunfunction/fff-create-app/commit/986a61a3b739f7381292288f9c6e6579f47311c5))
-* Fix tests ([b302b08](https://github.com/formfunfunction/fff-create-app/commit/b302b08a214403fb3368c90b96aff2a917424374))
-* framevuerk error ([250c6e1](https://github.com/formfunfunction/fff-create-app/commit/250c6e1640e5ae735dc060a1f8eaed31b970efa7))
-* ignore vim swap files ([#263](https://github.com/formfunfunction/fff-create-app/issues/263)) ([2ff7b11](https://github.com/formfunfunction/fff-create-app/commit/2ff7b11e49c663ce2c591aad438ce958db7df37f))
-* initial value of Express host and port ([#202](https://github.com/formfunfunction/fff-create-app/issues/202)) ([84110e2](https://github.com/formfunfunction/fff-create-app/commit/84110e2d8ec07e7283410cf4c6d946dc60ccd0b8))
-* iview UI package version match ([#265](https://github.com/formfunfunction/fff-create-app/issues/265)) ([e547353](https://github.com/formfunfunction/fff-create-app/commit/e54735359424bf3d859de99fd9f091ae39ef874e))
-* move commas to after module name ([#172](https://github.com/formfunfunction/fff-create-app/issues/172)) ([4d0ea42](https://github.com/formfunfunction/fff-create-app/commit/4d0ea42c701ccb2e9dc4e3303a9ba13814c6a8c0))
-* remove unwanted \n ([#141](https://github.com/formfunfunction/fff-create-app/issues/141)) ([d4132ac](https://github.com/formfunfunction/fff-create-app/commit/d4132ac99f87e556523a50d5d918affe52292e88))
-* upgrade lint-staged packages ([e10fe52](https://github.com/formfunfunction/fff-create-app/commit/e10fe520c79a98467c4de976e1d46ea106099f19))
-* upgrade prettier packages ([79075b0](https://github.com/formfunfunction/fff-create-app/commit/79075b0fd304c0a5dd5d9e5ce3a09bf193e6f986))
-* **templates:** Vuetify copyright year ([#415](https://github.com/formfunfunction/fff-create-app/issues/415)) ([1f6d68f](https://github.com/formfunfunction/fff-create-app/commit/1f6d68fe045127acfdff326c8009dc681b57a01c))
-* nuxt.ready is not called in dev mode ([441bb5b](https://github.com/formfunfunction/fff-create-app/commit/441bb5bd8b1cc6566202c59fb4e2f8dcb37290da))
-* run linter on project create ([#163](https://github.com/formfunfunction/fff-create-app/issues/163)) ([34f2bf5](https://github.com/formfunfunction/fff-create-app/commit/34f2bf5e0d41b33f9a6bbbff89c711f0fa940e96))
-* stylelint config rules is object ([6a6415e](https://github.com/formfunfunction/fff-create-app/commit/6a6415ebc0f94404d442134bf762a7728417fca5))
-* **template:** Stylelint config ([#387](https://github.com/formfunfunction/fff-create-app/issues/387)) ([28abd48](https://github.com/formfunfunction/fff-create-app/commit/28abd48e46dc5ca77ce880d4779428c8b2c9a01e))
-* add prompts.js into npm package ([#352](https://github.com/formfunfunction/fff-create-app/issues/352)) ([fef1a2e](https://github.com/formfunfunction/fff-create-app/commit/fef1a2e4598466e9804e90292e47395c94968a3d))
-* Adonis commands always running nuxt build ([#268](https://github.com/formfunfunction/fff-create-app/issues/268)) ([d38aa96](https://github.com/formfunfunction/fff-create-app/commit/d38aa96f5d667b891f62eeeb0d4727c2772df271))
-* prettier error in vuetify ([#281](https://github.com/formfunfunction/fff-create-app/issues/281)) ([b7756a2](https://github.com/formfunfunction/fff-create-app/commit/b7756a2ac1a5de0270593d18e30b79f32ac4a3cf))
-* remove unnecessary nodemon in devDependencies ([#309](https://github.com/formfunfunction/fff-create-app/issues/309)) ([cddccd6](https://github.com/formfunfunction/fff-create-app/commit/cddccd6bc922399ea1aa33d0a4348446fb35003b))
-* rename devModules to buildModules ([9d9c962](https://github.com/formfunfunction/fff-create-app/commit/9d9c9625bdd26e56231d86e2c0f38e0fe22aa921))
-* require nuxt-edge instead of nuxt ([#175](https://github.com/formfunfunction/fff-create-app/issues/175)) ([e7243e1](https://github.com/formfunfunction/fff-create-app/commit/e7243e15506f5b952071f8cd3c879f9fc2ea2f3c))
-* start message indentation ([510ee19](https://github.com/formfunfunction/fff-create-app/commit/510ee197606449a5cd2261515bbc91542e5c6583))
-* start server after building in micro ([1307be2](https://github.com/formfunfunction/fff-create-app/commit/1307be2395c24e82b8164a60c70b6fe0e5c0d93b))
-* support nuxt-edge in server side ([e9066f2](https://github.com/formfunfunction/fff-create-app/commit/e9066f20f335224a980f138bdc79fdf70d3b692c))
-* tailwind dependency ([#92](https://github.com/formfunfunction/fff-create-app/issues/92)) ([998054d](https://github.com/formfunfunction/fff-create-app/commit/998054d44a75ea49841dc4c9eed2fccdd3204980))
-* update snapshots ([10ad76f](https://github.com/formfunfunction/fff-create-app/commit/10ad76f7c4dc01eea04ce17ac15395188e8def74))
-* **tests:** update babel config for ava ([#342](https://github.com/formfunfunction/fff-create-app/issues/342)) ([a257561](https://github.com/formfunfunction/fff-create-app/commit/a2575615a451d748ebfcaf5d45f5d02d98b17b3a))
-* undefined colors vuetify errors in nuxt.config.js ([650fe6c](https://github.com/formfunfunction/fff-create-app/commit/650fe6c3913ada9f266433dfc27ccc7c6434bbd3))
-* updgrade @nuxtjs/pwa to v3 ([#216](https://github.com/formfunfunction/fff-create-app/issues/216)) ([de66e4e](https://github.com/formfunfunction/fff-create-app/commit/de66e4ea9bccd9a3dfe0ce72c136f94eaf9840db))
-* use framevuerk-nuxt.min.css in framevuerk ([1b5713b](https://github.com/formfunfunction/fff-create-app/commit/1b5713b63e26f439c64ca9ca9e52a34d0bf9149a))
-* **antd-ui:** register plugin only once ([#233](https://github.com/formfunfunction/fff-create-app/issues/233)) ([afe1c6c](https://github.com/formfunfunction/fff-create-app/commit/afe1c6cb91239d2e2de46996005a01cb81bcfdd1))
-* **element:** register element UI only once ([#232](https://github.com/formfunfunction/fff-create-app/issues/232)) ([7e533dd](https://github.com/formfunfunction/fff-create-app/commit/7e533dd599087a8a6d9569dac9662f14bae6954f))
-* **element-ui:** missing element-ui build transpile ([#167](https://github.com/formfunfunction/fff-create-app/issues/167)) ([3e3ec94](https://github.com/formfunfunction/fff-create-app/commit/3e3ec9412341bfc9e2cc88d7bfce7d9dbc1f472f))
-* **element-ui:** update plugin import ([#168](https://github.com/formfunfunction/fff-create-app/issues/168)) ([f740c5a](https://github.com/formfunfunction/fff-create-app/commit/f740c5ae74978110fb49daf807b29e99e3eae114))
-* **iview:** register plugin only once ([#234](https://github.com/formfunfunction/fff-create-app/issues/234)) ([7ab985d](https://github.com/formfunfunction/fff-create-app/commit/7ab985da47de211d6b62e2df20ba0f9ff5a716db))
-* **vuetify :** add missing v-spacer before right v-btn ([#187](https://github.com/formfunfunction/fff-create-app/issues/187)) ([fa728d3](https://github.com/formfunfunction/fff-create-app/commit/fa728d35b85960b8f96099f3fc8f8db64095bbd5))
-* Update snapshots ([cedecfb](https://github.com/formfunfunction/fff-create-app/commit/cedecfb374c1ddd568d28ec12121fe24e0284def))
-* use npm for install ([8027300](https://github.com/formfunfunction/fff-create-app/commit/8027300397d9d84e6e5e4d704ca5ffb809c52577))
-* vuetify color darken2 ([c37c364](https://github.com/formfunfunction/fff-create-app/commit/c37c36412fbc189720e2ab4eccad38d26eff3cd9))
+* **prompts:** change JAMstack to Jamstack ([#742](https://github.com/nuxt/create-nuxt-app/issues/742)) ([904a26f](https://github.com/nuxt/create-nuxt-app/commit/904a26fad2a584fc722cda62ecc04dafe3a4ead4))
+* Oruga packagePatterns in renovate.json ([#734](https://github.com/nuxt/create-nuxt-app/issues/734)) ([236a5e0](https://github.com/nuxt/create-nuxt-app/commit/236a5e037e9a34e3c9c3842672509f65b31dda23))
+* **ts:** remove @nuxt/typescript-runtime ([#721](https://github.com/nuxt/create-nuxt-app/issues/721)) ([cbd58dc](https://github.com/nuxt/create-nuxt-app/commit/cbd58dc3242c90668f771d9d68bc5e48606a4274))
+* **ui:** add index page for vant ([cf2461b](https://github.com/nuxt/create-nuxt-app/commit/cf2461b5159c5cf4accfd90d01ffa2d89b5830fc))
+* **vuesax:** add boxicons ([#722](https://github.com/nuxt/create-nuxt-app/issues/722)) ([d121169](https://github.com/nuxt/create-nuxt-app/commit/d12116967a7bed3d96d4543bdd56561c4126e72c))
+* update sao link ([#707](https://github.com/nuxt/create-nuxt-app/issues/707)) ([3f548e5](https://github.com/nuxt/create-nuxt-app/commit/3f548e5de4a6fec4be2b987795b1a5bf29da4b4e))
 
 
 ### Features
 
-* migrate to monorepo ([#458](https://github.com/formfunfunction/fff-create-app/issues/458)) ([64991bb](https://github.com/formfunfunction/fff-create-app/commit/64991bba05b208e5078c8101c5adac55f2100ff2))
-* **server:** upgrade fastify to v2 ([952230b](https://github.com/formfunfunction/fff-create-app/commit/952230b1227da7b05182667385eaabc4e3127281))
-* @nuxtjs/eslint-config as default preset ([#115](https://github.com/formfunfunction/fff-create-app/issues/115)) ([4cef888](https://github.com/formfunfunction/fff-create-app/commit/4cef888a11040e8f9b2f54c120889619bac39d73))
-* add --verbose cli flag ([0d964e2](https://github.com/formfunfunction/fff-create-app/commit/0d964e256415d03ba5dbca46b7ccc76c7fb93d92))
-* add "edge" CLI flag to install nuxt-edge ([#116](https://github.com/formfunfunction/fff-create-app/issues/116)) ([1c4adfd](https://github.com/formfunfunction/fff-create-app/commit/1c4adfd57dba1a5fac66c4915aa4be4f3ea6e070))
-* add alias (@/~) support in ava tests ([#304](https://github.com/formfunfunction/fff-create-app/issues/304)) ([499e852](https://github.com/formfunfunction/fff-create-app/commit/499e8524ab72058aa2ea6cc83de8b4a244e9a5df))
-* add alias for --edge and --info ([7d0522d](https://github.com/formfunfunction/fff-create-app/commit/7d0522d02e65e500ade8cb3a2e61350398c7c3ba))
-* add dotenv module ([#358](https://github.com/formfunfunction/fff-create-app/issues/358)) ([40dd947](https://github.com/formfunfunction/fff-create-app/commit/40dd947dc2342dd3358adf92c4a912a4cf293a48))
-* Add e2e testing support using Ava ([#303](https://github.com/formfunfunction/fff-create-app/issues/303)) ([4d8fe95](https://github.com/formfunfunction/fff-create-app/commit/4d8fe95b0968d87faefa5ea6d053ac166377ed68))
-* add jsconfig.json file for VS Code users ([#277](https://github.com/formfunfunction/fff-create-app/issues/277)) ([3fee8e1](https://github.com/formfunfunction/fff-create-app/commit/3fee8e1f48c2d53e149a8b11e2c3cae6ceb32595))
-* add semantic pull request support ([#405](https://github.com/formfunfunction/fff-create-app/issues/405)) ([35728ee](https://github.com/formfunfunction/fff-create-app/commit/35728ee328265239d4818cf3ff9c21b3e04b83b4))
-* add stylelint module ([#278](https://github.com/formfunfunction/fff-create-app/issues/278)) ([18740f8](https://github.com/formfunfunction/fff-create-app/commit/18740f86eb2afd3226d277b42000e6ab21e94deb))
-* add stylelint to lint-staged ([33051e4](https://github.com/formfunfunction/fff-create-app/commit/33051e461e5c5c4984d87f0734cf2e22e09fda4d))
-* add support for semantic-pull-requests ([#322](https://github.com/formfunfunction/fff-create-app/issues/322)) ([5af63c0](https://github.com/formfunfunction/fff-create-app/commit/5af63c0d3bfd427f5b4a6be3276be14484ab6b7c))
-* add testing frameworks ([#155](https://github.com/formfunfunction/fff-create-app/issues/155)) ([77b5f97](https://github.com/formfunfunction/fff-create-app/commit/77b5f97cfae508ab6857a2e04ec7fb1d814db554))
-* add typescript support using typescript-build ([#328](https://github.com/formfunfunction/fff-create-app/issues/328)) ([e4b9cd8](https://github.com/formfunfunction/fff-create-app/commit/e4b9cd8e562fc2fedcc48bee3ab6c2d9bd2be12f))
-* **eslint:** upgrade @nuxtjs/eslint-config to v2 ([85b368b](https://github.com/formfunfunction/fff-create-app/commit/85b368b6cfbe768f8de4cbe3d4820bf5a787f68b))
-* add UI framework Framevuerk ([#291](https://github.com/formfunfunction/fff-create-app/issues/291)) ([db8441e](https://github.com/formfunfunction/fff-create-app/commit/db8441e17d23ea296abb2b92252fb0108a5ff3f6))
-* add Vuesax framework ui ([#424](https://github.com/formfunfunction/fff-create-app/issues/424)) ([952dc47](https://github.com/formfunfunction/fff-create-app/commit/952dc4786428e00a675167f42a527cba56e28be0))
-* **ava:** add support for ava v3 ([#414](https://github.com/formfunfunction/fff-create-app/issues/414)) ([0e14a6f](https://github.com/formfunfunction/fff-create-app/commit/0e14a6fb94e0cd40dcb06ba3dd4116b95f60b851))
-* add eslint nuxt plugin ([#199](https://github.com/formfunfunction/fff-create-app/issues/199)) ([730e6a0](https://github.com/formfunfunction/fff-create-app/commit/730e6a032517c62d74f88fe519772008a29afea1))
-* add yarnInstall ([#21](https://github.com/formfunfunction/fff-create-app/issues/21)) ([d837dc5](https://github.com/formfunfunction/fff-create-app/commit/d837dc5187cfcbf9bcb08ac348d079f3a8c55d1b))
-* answers option ([#347](https://github.com/formfunfunction/fff-create-app/issues/347)) ([75db75e](https://github.com/formfunfunction/fff-create-app/commit/75db75efd293222bc5d08839c5026f61f33b1be6))
-* bump `bootstrap-vue` to v2.0.0 stable ([#334](https://github.com/formfunfunction/fff-create-app/issues/334)) ([38af656](https://github.com/formfunfunction/fff-create-app/commit/38af656255733e483d0b177b717e924151a69583))
-* features checkboxes ([#156](https://github.com/formfunfunction/fff-create-app/issues/156)) ([67ba919](https://github.com/formfunfunction/fff-create-app/commit/67ba919e463667ce5314db7ade6f2f6fdce9c527))
-* improve functionality of create-nuxt-app cli ([#6](https://github.com/formfunfunction/fff-create-app/issues/6)) ([acf7df0](https://github.com/formfunfunction/fff-create-app/commit/acf7df04e410c63291532aa651a357b52fb571cd))
-* lint git staged files ([#269](https://github.com/formfunfunction/fff-create-app/issues/269)) ([1760f6a](https://github.com/formfunfunction/fff-create-app/commit/1760f6afb422fb3f518842cf692fb4bc902d3330))
-* move linting tool to separete prompt ([a6a4ac9](https://github.com/formfunfunction/fff-create-app/commit/a6a4ac90f28d62e46e0c24451ce4888430a4f19e))
-* replace tailwind with @nuxtjs/tailwindcss ([#254](https://github.com/formfunfunction/fff-create-app/issues/254)) ([5d0c6ff](https://github.com/formfunfunction/fff-create-app/commit/5d0c6ff078ab0921ff3236d2195439c3f0fa1be6))
-* update eslint-loader ([#46](https://github.com/formfunfunction/fff-create-app/issues/46)) ([cf5d477](https://github.com/formfunfunction/fff-create-app/commit/cf5d477cd67d2755e902f4ebef7bad2c29ae1df7))
-* update logo component with the new nuxt logo ([#363](https://github.com/formfunfunction/fff-create-app/issues/363)) ([b5a4417](https://github.com/formfunfunction/fff-create-app/commit/b5a4417bcc56aa7e7fec571b3baf4161db63f634))
-* update vuetify  to 1.3.0 with automatic tree shaking ([#123](https://github.com/formfunfunction/fff-create-app/issues/123)) ([c935bbc](https://github.com/formfunfunction/fff-create-app/commit/c935bbcd07fa96cf38939ffc81f4e96a4a08b97f))
-* upgrade Ava ([#284](https://github.com/formfunfunction/fff-create-app/issues/284)) ([54c29ff](https://github.com/formfunfunction/fff-create-app/commit/54c29ff85dc2725a96a15f9f7f750167a80d5d1f))
-* upgrade element-ui to 2.2.1 ([#41](https://github.com/formfunfunction/fff-create-app/issues/41)) ([1d61efb](https://github.com/formfunfunction/fff-create-app/commit/1d61efb6279cbb4eb85bb3ee58a7be91d23e3026))
-* upgrade eslint-module ([#300](https://github.com/formfunfunction/fff-create-app/issues/300)) ([b61e88e](https://github.com/formfunfunction/fff-create-app/commit/b61e88e179b4ecad46a99324ae6e2b2e16a1cad1))
-* upgrade saojs ([#183](https://github.com/formfunfunction/fff-create-app/issues/183)) ([47ec343](https://github.com/formfunfunction/fff-create-app/commit/47ec343bdad0130c4ceb3289dbf3e4a892a2a38f))
-* upgrade tailwindcss to v1 ([#237](https://github.com/formfunfunction/fff-create-app/issues/237)) ([b429533](https://github.com/formfunfunction/fff-create-app/commit/b4295331f3bfe97606468006fc8feb2332db2ba6))
-* upgrade vuetify to 2.x ([#297](https://github.com/formfunfunction/fff-create-app/issues/297)) ([f735b63](https://github.com/formfunfunction/fff-create-app/commit/f735b63d5df1bdc49626b648a18571536122ba73))
-* **chore:** included a dedicated option to show up envinfo ([#272](https://github.com/formfunfunction/fff-create-app/issues/272)) ([d2917a9](https://github.com/formfunfunction/fff-create-app/commit/d2917a9d4ea987966048bdd0c7c268ceb165718f))
-* **cli:** use cac for cli ([#264](https://github.com/formfunfunction/fff-create-app/issues/264)) ([b80fa2d](https://github.com/formfunfunction/fff-create-app/commit/b80fa2d65f7aec55f4242ba6543d07c759a435d4))
-* **hapi:** upgrade to hapi 18 ([#231](https://github.com/formfunfunction/fff-create-app/issues/231)) ([3112b75](https://github.com/formfunfunction/fff-create-app/commit/3112b75e89093d5e053e106772fdfaccdebb73e3))
-* **vuetify:** use vuetify module ([#225](https://github.com/formfunfunction/fff-create-app/issues/225)) ([1c8d944](https://github.com/formfunfunction/fff-create-app/commit/1c8d944403db1d820535385897bb54c7a6ca604b))
-* upgrade feathersjs to 3.x ([10f32f5](https://github.com/formfunfunction/fff-create-app/commit/10f32f5913c2cf912adf32d56cb8d9b128c75a5f))
-* upgrade Vuetify to 0.17.3 ([#12](https://github.com/formfunfunction/fff-create-app/issues/12)) ([808521e](https://github.com/formfunfunction/fff-create-app/commit/808521ed75ed7d8e0982738219ff814eeef71feb))
-* use ESM syntax for Nuxt config ([#195](https://github.com/formfunfunction/fff-create-app/issues/195)) ([4f9706f](https://github.com/formfunfunction/fff-create-app/commit/4f9706f4e09cf5c88a4f86b87915c4d09d116f90))
-* validate package name ([#150](https://github.com/formfunfunction/fff-create-app/issues/150)) ([68c0841](https://github.com/formfunfunction/fff-create-app/commit/68c0841e7e284ebf95b9bac115a051ff8d4c43da))
+* Add CircleCI and Travis CI ([#737](https://github.com/nuxt/create-nuxt-app/issues/737)) ([1cfe0d4](https://github.com/nuxt/create-nuxt-app/commit/1cfe0d4b161593db986995bb2e677700ac83f457))
+* Add nuxt windicss. ([#753](https://github.com/nuxt/create-nuxt-app/issues/753)) ([a0da946](https://github.com/nuxt/create-nuxt-app/commit/a0da9468f0f95b4577e1dbbc7bb303396d99c1b8))
+* add vant ui framework ([#710](https://github.com/nuxt/create-nuxt-app/issues/710)) ([37bfea3](https://github.com/nuxt/create-nuxt-app/commit/37bfea3a7f16e2e92941053b8bff40e5ed414abf))
+* update @nuxtjs/tailwindcss to v4 ([#751](https://github.com/nuxt/create-nuxt-app/issues/751)) ([691bd8a](https://github.com/nuxt/create-nuxt-app/commit/691bd8a1d2cbcc3807c7b2acb19f7369216bd579))
+* update iview to viewui ([#714](https://github.com/nuxt/create-nuxt-app/issues/714)) ([43da555](https://github.com/nuxt/create-nuxt-app/commit/43da55582dc87bb1a1f80747b70181bc6f5fb174))
+* upgrade @oruga-ui/oruga to version 0.3.3 ([#717](https://github.com/nuxt/create-nuxt-app/issues/717)) ([77f948c](https://github.com/nuxt/create-nuxt-app/commit/77f948cca6e3eab3c16e7ed8ed8b1539a726fb27))
 
 
 
 
 
-## [1.0.2](https://github.com/formfunfunction/fff-create-app/compare/v1.0.1...v1.0.2) (2020-08-18)
+## [3.5.2](https://github.com/nuxt/create-nuxt-app/compare/v3.5.1...v3.5.2) (2021-01-28)
 
-**Note:** Version bump only for package fff-create-app
-
-
+**Note:** Version bump only for package create-nuxt-app
 
 
 
-## 1.0.1 (2020-04-15)
+
+
+## [3.5.1](https://github.com/nuxt/create-nuxt-app/compare/v3.5.0...v3.5.1) (2021-01-28)
 
 
 ### Bug Fixes
 
-* add coverage config to jest setup ([#198](https://github.com/formfunfunction/fff-create-app/issues/198)) ([85a29ec](https://github.com/formfunfunction/fff-create-app/commit/85a29ec62232035395ca94e9718205a21b2d8671))
-* add missing explicit dependency ([#169](https://github.com/formfunfunction/fff-create-app/issues/169)) ([19b73bb](https://github.com/formfunfunction/fff-create-app/commit/19b73bb25c2b2cd1867fc213c8b384a4b4bb9261))
-* adonis lint errors ([c010b3c](https://github.com/formfunfunction/fff-create-app/commit/c010b3cee73afb7d74f4545b5f94ea51f4c3ead5))
-* await ready before listen ([c5520ec](https://github.com/formfunfunction/fff-create-app/commit/c5520ec80d7029d48057d07e330bcbe2aa6461a4))
-* axios documentation link in config template ([#161](https://github.com/formfunfunction/fff-create-app/issues/161)) ([78dc48e](https://github.com/formfunfunction/fff-create-app/commit/78dc48eac3168aebfddd21321ac48c32fb0c9b2b))
-* Cannot find module 'nuxt-edge' ([#87](https://github.com/formfunfunction/fff-create-app/issues/87)) ([4dcfc82](https://github.com/formfunfunction/fff-create-app/commit/4dcfc828cab665b8d5aa13254e37b643f6ff9360))
-* Cannot find module 'nuxt-edge' ([#91](https://github.com/formfunfunction/fff-create-app/issues/91)) ([92c0972](https://github.com/formfunfunction/fff-create-app/commit/92c097275fed6b1c8a5b00315b4211a15cbd8ded))
-* comment vuetify/variables.scss with doc link ([#318](https://github.com/formfunfunction/fff-create-app/issues/318)) ([e4f1d64](https://github.com/formfunfunction/fff-create-app/commit/e4f1d645243ad24997fdbaee6d21b1ade160ddd6))
-* disable no cjs rule ([#203](https://github.com/formfunfunction/fff-create-app/issues/203)) ([9e29192](https://github.com/formfunfunction/fff-create-app/commit/9e291922edbd03d83ca514e3c94144162f28c147))
-* lint-staged should only check staged files ([b516d23](https://github.com/formfunfunction/fff-create-app/commit/b516d234d733d0b5f2ddf0e1219d4eadef8e9d40))
-* update prompts to add static in universal ([#462](https://github.com/formfunfunction/fff-create-app/issues/462)) ([71d84b1](https://github.com/formfunfunction/fff-create-app/commit/71d84b16a57147f159ce0c858a0b7bfa757d7a4b))
-* vuetify footer fixed attribute toggling ([dae1734](https://github.com/formfunfunction/fff-create-app/commit/dae17340f5a3b905aad655a622d6bab21aacbafe))
-* **ava:** no tests found in test/ava.setup.js ([#426](https://github.com/formfunfunction/fff-create-app/issues/426)) ([c1afad4](https://github.com/formfunfunction/fff-create-app/commit/c1afad42ddf0206af303df64e0a8a7bd9c67e108))
-* cannot find module babel-core ([#310](https://github.com/formfunfunction/fff-create-app/issues/310)) ([cf1dbde](https://github.com/formfunfunction/fff-create-app/commit/cf1dbdeb9a75ef42a0a735ea037104ad3d255b90))
-* Duplicate key 'devModules' ([#273](https://github.com/formfunfunction/fff-create-app/issues/273)) ([e7ef3a9](https://github.com/formfunfunction/fff-create-app/commit/e7ef3a944e908b04becc90d877dfbb8f8e421a53))
-* express server file ([b5dca09](https://github.com/formfunfunction/fff-create-app/commit/b5dca09f8d272522c06ab149fa100e2f4fc35581))
-* Fix .env not existing in Adonis framework ([898a504](https://github.com/formfunfunction/fff-create-app/commit/898a5047f2b9cd65186056ac144d356fd0e92daa))
-* Fix CircleCI ([986a61a](https://github.com/formfunfunction/fff-create-app/commit/986a61a3b739f7381292288f9c6e6579f47311c5))
-* Fix tests ([b302b08](https://github.com/formfunfunction/fff-create-app/commit/b302b08a214403fb3368c90b96aff2a917424374))
-* framevuerk error ([250c6e1](https://github.com/formfunfunction/fff-create-app/commit/250c6e1640e5ae735dc060a1f8eaed31b970efa7))
-* ignore vim swap files ([#263](https://github.com/formfunfunction/fff-create-app/issues/263)) ([2ff7b11](https://github.com/formfunfunction/fff-create-app/commit/2ff7b11e49c663ce2c591aad438ce958db7df37f))
-* initial value of Express host and port ([#202](https://github.com/formfunfunction/fff-create-app/issues/202)) ([84110e2](https://github.com/formfunfunction/fff-create-app/commit/84110e2d8ec07e7283410cf4c6d946dc60ccd0b8))
-* iview UI package version match ([#265](https://github.com/formfunfunction/fff-create-app/issues/265)) ([e547353](https://github.com/formfunfunction/fff-create-app/commit/e54735359424bf3d859de99fd9f091ae39ef874e))
-* move commas to after module name ([#172](https://github.com/formfunfunction/fff-create-app/issues/172)) ([4d0ea42](https://github.com/formfunfunction/fff-create-app/commit/4d0ea42c701ccb2e9dc4e3303a9ba13814c6a8c0))
-* remove unwanted \n ([#141](https://github.com/formfunfunction/fff-create-app/issues/141)) ([d4132ac](https://github.com/formfunfunction/fff-create-app/commit/d4132ac99f87e556523a50d5d918affe52292e88))
-* upgrade lint-staged packages ([e10fe52](https://github.com/formfunfunction/fff-create-app/commit/e10fe520c79a98467c4de976e1d46ea106099f19))
-* upgrade prettier packages ([79075b0](https://github.com/formfunfunction/fff-create-app/commit/79075b0fd304c0a5dd5d9e5ce3a09bf193e6f986))
-* **templates:** Vuetify copyright year ([#415](https://github.com/formfunfunction/fff-create-app/issues/415)) ([1f6d68f](https://github.com/formfunfunction/fff-create-app/commit/1f6d68fe045127acfdff326c8009dc681b57a01c))
-* nuxt.ready is not called in dev mode ([441bb5b](https://github.com/formfunfunction/fff-create-app/commit/441bb5bd8b1cc6566202c59fb4e2f8dcb37290da))
-* run linter on project create ([#163](https://github.com/formfunfunction/fff-create-app/issues/163)) ([34f2bf5](https://github.com/formfunfunction/fff-create-app/commit/34f2bf5e0d41b33f9a6bbbff89c711f0fa940e96))
-* stylelint config rules is object ([6a6415e](https://github.com/formfunfunction/fff-create-app/commit/6a6415ebc0f94404d442134bf762a7728417fca5))
-* **template:** Stylelint config ([#387](https://github.com/formfunfunction/fff-create-app/issues/387)) ([28abd48](https://github.com/formfunfunction/fff-create-app/commit/28abd48e46dc5ca77ce880d4779428c8b2c9a01e))
-* add prompts.js into npm package ([#352](https://github.com/formfunfunction/fff-create-app/issues/352)) ([fef1a2e](https://github.com/formfunfunction/fff-create-app/commit/fef1a2e4598466e9804e90292e47395c94968a3d))
-* Adonis commands always running nuxt build ([#268](https://github.com/formfunfunction/fff-create-app/issues/268)) ([d38aa96](https://github.com/formfunfunction/fff-create-app/commit/d38aa96f5d667b891f62eeeb0d4727c2772df271))
-* prettier error in vuetify ([#281](https://github.com/formfunfunction/fff-create-app/issues/281)) ([b7756a2](https://github.com/formfunfunction/fff-create-app/commit/b7756a2ac1a5de0270593d18e30b79f32ac4a3cf))
-* remove unnecessary nodemon in devDependencies ([#309](https://github.com/formfunfunction/fff-create-app/issues/309)) ([cddccd6](https://github.com/formfunfunction/fff-create-app/commit/cddccd6bc922399ea1aa33d0a4348446fb35003b))
-* rename devModules to buildModules ([9d9c962](https://github.com/formfunfunction/fff-create-app/commit/9d9c9625bdd26e56231d86e2c0f38e0fe22aa921))
-* require nuxt-edge instead of nuxt ([#175](https://github.com/formfunfunction/fff-create-app/issues/175)) ([e7243e1](https://github.com/formfunfunction/fff-create-app/commit/e7243e15506f5b952071f8cd3c879f9fc2ea2f3c))
-* start message indentation ([510ee19](https://github.com/formfunfunction/fff-create-app/commit/510ee197606449a5cd2261515bbc91542e5c6583))
-* start server after building in micro ([1307be2](https://github.com/formfunfunction/fff-create-app/commit/1307be2395c24e82b8164a60c70b6fe0e5c0d93b))
-* support nuxt-edge in server side ([e9066f2](https://github.com/formfunfunction/fff-create-app/commit/e9066f20f335224a980f138bdc79fdf70d3b692c))
-* tailwind dependency ([#92](https://github.com/formfunfunction/fff-create-app/issues/92)) ([998054d](https://github.com/formfunfunction/fff-create-app/commit/998054d44a75ea49841dc4c9eed2fccdd3204980))
-* update snapshots ([10ad76f](https://github.com/formfunfunction/fff-create-app/commit/10ad76f7c4dc01eea04ce17ac15395188e8def74))
-* **tests:** update babel config for ava ([#342](https://github.com/formfunfunction/fff-create-app/issues/342)) ([a257561](https://github.com/formfunfunction/fff-create-app/commit/a2575615a451d748ebfcaf5d45f5d02d98b17b3a))
-* undefined colors vuetify errors in nuxt.config.js ([650fe6c](https://github.com/formfunfunction/fff-create-app/commit/650fe6c3913ada9f266433dfc27ccc7c6434bbd3))
-* updgrade @nuxtjs/pwa to v3 ([#216](https://github.com/formfunfunction/fff-create-app/issues/216)) ([de66e4e](https://github.com/formfunfunction/fff-create-app/commit/de66e4ea9bccd9a3dfe0ce72c136f94eaf9840db))
-* use framevuerk-nuxt.min.css in framevuerk ([1b5713b](https://github.com/formfunfunction/fff-create-app/commit/1b5713b63e26f439c64ca9ca9e52a34d0bf9149a))
-* **antd-ui:** register plugin only once ([#233](https://github.com/formfunfunction/fff-create-app/issues/233)) ([afe1c6c](https://github.com/formfunfunction/fff-create-app/commit/afe1c6cb91239d2e2de46996005a01cb81bcfdd1))
-* **element:** register element UI only once ([#232](https://github.com/formfunfunction/fff-create-app/issues/232)) ([7e533dd](https://github.com/formfunfunction/fff-create-app/commit/7e533dd599087a8a6d9569dac9662f14bae6954f))
-* **element-ui:** missing element-ui build transpile ([#167](https://github.com/formfunfunction/fff-create-app/issues/167)) ([3e3ec94](https://github.com/formfunfunction/fff-create-app/commit/3e3ec9412341bfc9e2cc88d7bfce7d9dbc1f472f))
-* **element-ui:** update plugin import ([#168](https://github.com/formfunfunction/fff-create-app/issues/168)) ([f740c5a](https://github.com/formfunfunction/fff-create-app/commit/f740c5ae74978110fb49daf807b29e99e3eae114))
-* **iview:** register plugin only once ([#234](https://github.com/formfunfunction/fff-create-app/issues/234)) ([7ab985d](https://github.com/formfunfunction/fff-create-app/commit/7ab985da47de211d6b62e2df20ba0f9ff5a716db))
-* **vuetify :** add missing v-spacer before right v-btn ([#187](https://github.com/formfunfunction/fff-create-app/issues/187)) ([fa728d3](https://github.com/formfunfunction/fff-create-app/commit/fa728d35b85960b8f96099f3fc8f8db64095bbd5))
-* Update snapshots ([cedecfb](https://github.com/formfunfunction/fff-create-app/commit/cedecfb374c1ddd568d28ec12121fe24e0284def))
-* use npm for install ([8027300](https://github.com/formfunfunction/fff-create-app/commit/8027300397d9d84e6e5e4d704ca5ffb809c52577))
-* vuetify color darken2 ([c37c364](https://github.com/formfunfunction/fff-create-app/commit/c37c36412fbc189720e2ab4eccad38d26eff3cd9))
+* **types:** include @nuxtjs/axios types ([#691](https://github.com/nuxt/create-nuxt-app/issues/691)) ([c4680b0](https://github.com/nuxt/create-nuxt-app/commit/c4680b0018edefdd5de0a771858faa83c7d43b37))
+* **ui:** remove @nuxtjs/bulma ([#695](https://github.com/nuxt/create-nuxt-app/issues/695)) ([371bb59](https://github.com/nuxt/create-nuxt-app/commit/371bb5999acaf68bf29acc994ded130bd6c0c9ce))
+
+
+
+
+
+# [3.5.0](https://github.com/nuxt/create-nuxt-app/compare/v3.4.0...v3.5.0) (2021-01-17)
+
+
+### Bug Fixes
+
+* **link:** add eslint-plugin-vue to devDependency ([7cef146](https://github.com/nuxt/create-nuxt-app/commit/7cef1461933464294857ebad31ea0574d2f23e29))
+* **lint:** use double quotes for glob syntax ([#684](https://github.com/nuxt/create-nuxt-app/issues/684)) ([2e1aff8](https://github.com/nuxt/create-nuxt-app/commit/2e1aff819eac10e7a18588917b06ec5bc611e968))
+* **template:** htmlAttrs typo ([af72313](https://github.com/nuxt/create-nuxt-app/commit/af723137760844299545209973cc237191aba2a8))
+* **types:** add nuxt content support for typescript ([#688](https://github.com/nuxt/create-nuxt-app/issues/688)) ([ecbc960](https://github.com/nuxt/create-nuxt-app/commit/ecbc9607126bc11e82850a959ac463a61694bda4))
+* e2e tests are configured with project's nuxt.config ([#670](https://github.com/nuxt/create-nuxt-app/issues/670)) ([be14839](https://github.com/nuxt/create-nuxt-app/commit/be14839914ccb3b15b5f9ad7a68d8784fd9d8327))
 
 
 ### Features
 
-* migrate to monorepo ([#458](https://github.com/formfunfunction/fff-create-app/issues/458)) ([64991bb](https://github.com/formfunfunction/fff-create-app/commit/64991bba05b208e5078c8101c5adac55f2100ff2))
-* **server:** upgrade fastify to v2 ([952230b](https://github.com/formfunfunction/fff-create-app/commit/952230b1227da7b05182667385eaabc4e3127281))
-* @nuxtjs/eslint-config as default preset ([#115](https://github.com/formfunfunction/fff-create-app/issues/115)) ([4cef888](https://github.com/formfunfunction/fff-create-app/commit/4cef888a11040e8f9b2f54c120889619bac39d73))
-* add --verbose cli flag ([0d964e2](https://github.com/formfunfunction/fff-create-app/commit/0d964e256415d03ba5dbca46b7ccc76c7fb93d92))
-* add "edge" CLI flag to install nuxt-edge ([#116](https://github.com/formfunfunction/fff-create-app/issues/116)) ([1c4adfd](https://github.com/formfunfunction/fff-create-app/commit/1c4adfd57dba1a5fac66c4915aa4be4f3ea6e070))
-* add alias (@/~) support in ava tests ([#304](https://github.com/formfunfunction/fff-create-app/issues/304)) ([499e852](https://github.com/formfunfunction/fff-create-app/commit/499e8524ab72058aa2ea6cc83de8b4a244e9a5df))
-* add alias for --edge and --info ([7d0522d](https://github.com/formfunfunction/fff-create-app/commit/7d0522d02e65e500ade8cb3a2e61350398c7c3ba))
-* add dotenv module ([#358](https://github.com/formfunfunction/fff-create-app/issues/358)) ([40dd947](https://github.com/formfunfunction/fff-create-app/commit/40dd947dc2342dd3358adf92c4a912a4cf293a48))
-* Add e2e testing support using Ava ([#303](https://github.com/formfunfunction/fff-create-app/issues/303)) ([4d8fe95](https://github.com/formfunfunction/fff-create-app/commit/4d8fe95b0968d87faefa5ea6d053ac166377ed68))
-* add jsconfig.json file for VS Code users ([#277](https://github.com/formfunfunction/fff-create-app/issues/277)) ([3fee8e1](https://github.com/formfunfunction/fff-create-app/commit/3fee8e1f48c2d53e149a8b11e2c3cae6ceb32595))
-* add semantic pull request support ([#405](https://github.com/formfunfunction/fff-create-app/issues/405)) ([35728ee](https://github.com/formfunfunction/fff-create-app/commit/35728ee328265239d4818cf3ff9c21b3e04b83b4))
-* add stylelint module ([#278](https://github.com/formfunfunction/fff-create-app/issues/278)) ([18740f8](https://github.com/formfunfunction/fff-create-app/commit/18740f86eb2afd3226d277b42000e6ab21e94deb))
-* add stylelint to lint-staged ([33051e4](https://github.com/formfunfunction/fff-create-app/commit/33051e461e5c5c4984d87f0734cf2e22e09fda4d))
-* add support for semantic-pull-requests ([#322](https://github.com/formfunfunction/fff-create-app/issues/322)) ([5af63c0](https://github.com/formfunfunction/fff-create-app/commit/5af63c0d3bfd427f5b4a6be3276be14484ab6b7c))
-* add testing frameworks ([#155](https://github.com/formfunfunction/fff-create-app/issues/155)) ([77b5f97](https://github.com/formfunfunction/fff-create-app/commit/77b5f97cfae508ab6857a2e04ec7fb1d814db554))
-* add typescript support using typescript-build ([#328](https://github.com/formfunfunction/fff-create-app/issues/328)) ([e4b9cd8](https://github.com/formfunfunction/fff-create-app/commit/e4b9cd8e562fc2fedcc48bee3ab6c2d9bd2be12f))
-* **eslint:** upgrade @nuxtjs/eslint-config to v2 ([85b368b](https://github.com/formfunfunction/fff-create-app/commit/85b368b6cfbe768f8de4cbe3d4820bf5a787f68b))
-* add UI framework Framevuerk ([#291](https://github.com/formfunfunction/fff-create-app/issues/291)) ([db8441e](https://github.com/formfunfunction/fff-create-app/commit/db8441e17d23ea296abb2b92252fb0108a5ff3f6))
-* add Vuesax framework ui ([#424](https://github.com/formfunfunction/fff-create-app/issues/424)) ([952dc47](https://github.com/formfunfunction/fff-create-app/commit/952dc4786428e00a675167f42a527cba56e28be0))
-* **ava:** add support for ava v3 ([#414](https://github.com/formfunfunction/fff-create-app/issues/414)) ([0e14a6f](https://github.com/formfunfunction/fff-create-app/commit/0e14a6fb94e0cd40dcb06ba3dd4116b95f60b851))
-* add eslint nuxt plugin ([#199](https://github.com/formfunfunction/fff-create-app/issues/199)) ([730e6a0](https://github.com/formfunfunction/fff-create-app/commit/730e6a032517c62d74f88fe519772008a29afea1))
-* add yarnInstall ([#21](https://github.com/formfunfunction/fff-create-app/issues/21)) ([d837dc5](https://github.com/formfunfunction/fff-create-app/commit/d837dc5187cfcbf9bcb08ac348d079f3a8c55d1b))
-* answers option ([#347](https://github.com/formfunfunction/fff-create-app/issues/347)) ([75db75e](https://github.com/formfunfunction/fff-create-app/commit/75db75efd293222bc5d08839c5026f61f33b1be6))
-* bump `bootstrap-vue` to v2.0.0 stable ([#334](https://github.com/formfunfunction/fff-create-app/issues/334)) ([38af656](https://github.com/formfunfunction/fff-create-app/commit/38af656255733e483d0b177b717e924151a69583))
-* features checkboxes ([#156](https://github.com/formfunfunction/fff-create-app/issues/156)) ([67ba919](https://github.com/formfunfunction/fff-create-app/commit/67ba919e463667ce5314db7ade6f2f6fdce9c527))
-* improve functionality of create-nuxt-app cli ([#6](https://github.com/formfunfunction/fff-create-app/issues/6)) ([acf7df0](https://github.com/formfunfunction/fff-create-app/commit/acf7df04e410c63291532aa651a357b52fb571cd))
-* lint git staged files ([#269](https://github.com/formfunfunction/fff-create-app/issues/269)) ([1760f6a](https://github.com/formfunfunction/fff-create-app/commit/1760f6afb422fb3f518842cf692fb4bc902d3330))
-* move linting tool to separete prompt ([a6a4ac9](https://github.com/formfunfunction/fff-create-app/commit/a6a4ac90f28d62e46e0c24451ce4888430a4f19e))
-* replace tailwind with @nuxtjs/tailwindcss ([#254](https://github.com/formfunfunction/fff-create-app/issues/254)) ([5d0c6ff](https://github.com/formfunfunction/fff-create-app/commit/5d0c6ff078ab0921ff3236d2195439c3f0fa1be6))
-* update eslint-loader ([#46](https://github.com/formfunfunction/fff-create-app/issues/46)) ([cf5d477](https://github.com/formfunfunction/fff-create-app/commit/cf5d477cd67d2755e902f4ebef7bad2c29ae1df7))
-* update logo component with the new nuxt logo ([#363](https://github.com/formfunfunction/fff-create-app/issues/363)) ([b5a4417](https://github.com/formfunfunction/fff-create-app/commit/b5a4417bcc56aa7e7fec571b3baf4161db63f634))
-* update vuetify  to 1.3.0 with automatic tree shaking ([#123](https://github.com/formfunfunction/fff-create-app/issues/123)) ([c935bbc](https://github.com/formfunfunction/fff-create-app/commit/c935bbcd07fa96cf38939ffc81f4e96a4a08b97f))
-* upgrade Ava ([#284](https://github.com/formfunfunction/fff-create-app/issues/284)) ([54c29ff](https://github.com/formfunfunction/fff-create-app/commit/54c29ff85dc2725a96a15f9f7f750167a80d5d1f))
-* upgrade element-ui to 2.2.1 ([#41](https://github.com/formfunfunction/fff-create-app/issues/41)) ([1d61efb](https://github.com/formfunfunction/fff-create-app/commit/1d61efb6279cbb4eb85bb3ee58a7be91d23e3026))
-* upgrade eslint-module ([#300](https://github.com/formfunfunction/fff-create-app/issues/300)) ([b61e88e](https://github.com/formfunfunction/fff-create-app/commit/b61e88e179b4ecad46a99324ae6e2b2e16a1cad1))
-* upgrade saojs ([#183](https://github.com/formfunfunction/fff-create-app/issues/183)) ([47ec343](https://github.com/formfunfunction/fff-create-app/commit/47ec343bdad0130c4ceb3289dbf3e4a892a2a38f))
-* upgrade tailwindcss to v1 ([#237](https://github.com/formfunfunction/fff-create-app/issues/237)) ([b429533](https://github.com/formfunfunction/fff-create-app/commit/b4295331f3bfe97606468006fc8feb2332db2ba6))
-* upgrade vuetify to 2.x ([#297](https://github.com/formfunfunction/fff-create-app/issues/297)) ([f735b63](https://github.com/formfunfunction/fff-create-app/commit/f735b63d5df1bdc49626b648a18571536122ba73))
-* **chore:** included a dedicated option to show up envinfo ([#272](https://github.com/formfunfunction/fff-create-app/issues/272)) ([d2917a9](https://github.com/formfunfunction/fff-create-app/commit/d2917a9d4ea987966048bdd0c7c268ceb165718f))
-* **cli:** use cac for cli ([#264](https://github.com/formfunfunction/fff-create-app/issues/264)) ([b80fa2d](https://github.com/formfunfunction/fff-create-app/commit/b80fa2d65f7aec55f4242ba6543d07c759a435d4))
-* **hapi:** upgrade to hapi 18 ([#231](https://github.com/formfunfunction/fff-create-app/issues/231)) ([3112b75](https://github.com/formfunfunction/fff-create-app/commit/3112b75e89093d5e053e106772fdfaccdebb73e3))
-* **vuetify:** use vuetify module ([#225](https://github.com/formfunfunction/fff-create-app/issues/225)) ([1c8d944](https://github.com/formfunfunction/fff-create-app/commit/1c8d944403db1d820535385897bb54c7a6ca604b))
-* upgrade feathersjs to 3.x ([10f32f5](https://github.com/formfunfunction/fff-create-app/commit/10f32f5913c2cf912adf32d56cb8d9b128c75a5f))
-* upgrade Vuetify to 0.17.3 ([#12](https://github.com/formfunfunction/fff-create-app/issues/12)) ([808521e](https://github.com/formfunfunction/fff-create-app/commit/808521ed75ed7d8e0982738219ff814eeef71feb))
-* use ESM syntax for Nuxt config ([#195](https://github.com/formfunfunction/fff-create-app/issues/195)) ([4f9706f](https://github.com/formfunfunction/fff-create-app/commit/4f9706f4e09cf5c88a4f86b87915c4d09d116f90))
-* validate package name ([#150](https://github.com/formfunfunction/fff-create-app/issues/150)) ([68c0841](https://github.com/formfunfunction/fff-create-app/commit/68c0841e7e284ebf95b9bac115a051ff8d4c43da))
+* add BalmUI to UI framework ([#636](https://github.com/nuxt/create-nuxt-app/issues/636)) ([d57c992](https://github.com/nuxt/create-nuxt-app/commit/d57c992b966f2ff0c70cfbfb2eac95c5a4ed65d9))
+* **pwa:** add default language to nuxt.config ([#653](https://github.com/nuxt/create-nuxt-app/issues/653)) ([31dd1a3](https://github.com/nuxt/create-nuxt-app/commit/31dd1a39bb134738a04de93961e6dea16807ef8f))
+* add Nightwatch.js as test framework option ([#572](https://github.com/nuxt/create-nuxt-app/issues/572)) ([75985e4](https://github.com/nuxt/create-nuxt-app/commit/75985e47a841fe8898f6f17b265fe6566984db8e))
+* add Oruga as UI framework option ([#635](https://github.com/nuxt/create-nuxt-app/issues/635)) ([b6facaf](https://github.com/nuxt/create-nuxt-app/commit/b6facaf6383c30699879f7b5e4e2433bf22adfa7))
+* add route page and content fetch ([#632](https://github.com/nuxt/create-nuxt-app/issues/632)) ([d045b20](https://github.com/nuxt/create-nuxt-app/commit/d045b200e69983b56a5ebc679fd35f7c00ea07da))
+* don't install @nuxtjs/eslint-config and @nuxtjs/eslint-config-typescript together ([#633](https://github.com/nuxt/create-nuxt-app/issues/633)) ([60795d1](https://github.com/nuxt/create-nuxt-app/commit/60795d152992b68cd833530068b4549e132ecc19))
+
+
+
+
+
+# [3.4.0](https://github.com/nuxt/create-nuxt-app/compare/v3.3.0...v3.4.0) (2020-10-06)
+
+
+### Bug Fixes
+
+* **vuetify:** updated layout to be on par with vuetify 2.x ([#619](https://github.com/nuxt/create-nuxt-app/issues/619)) ([4ceb4c1](https://github.com/nuxt/create-nuxt-app/commit/4ceb4c176d9a829d67485e1a099001f7b743ea60))
+
+
+### Features
+
+* add GitHub Action out-of-the-box ([#621](https://github.com/nuxt/create-nuxt-app/issues/621)) ([ad67d2f](https://github.com/nuxt/create-nuxt-app/commit/ad67d2f4dbd01a08be7d01056e626d26c03e0951))
+
+
+
+
+
+# [3.3.0](https://github.com/nuxt/create-nuxt-app/compare/v3.2.0...v3.3.0) (2020-09-17)
+
+
+### Bug Fixes
+
+* **template:** bump typescript packages versions ([#599](https://github.com/nuxt/create-nuxt-app/issues/599)) ([b00e836](https://github.com/nuxt/create-nuxt-app/commit/b00e836b43cd8f0d7cb459be59c227efc3503cd3))
+* eslint issue with ava ([#595](https://github.com/nuxt/create-nuxt-app/issues/595)) ([f77d6bd](https://github.com/nuxt/create-nuxt-app/commit/f77d6bd4d361644fc4d4006ecff87f5d7cc93a56))
+* updated layout to be in par with vuetify 2.x ([#597](https://github.com/nuxt/create-nuxt-app/issues/597)) ([4d404ff](https://github.com/nuxt/create-nuxt-app/commit/4d404ff6bb1f9e0c0017a2e83b52ab8f68bf4051))
+
+
+### Features
+
+* add commitlint as linting tools option ([#592](https://github.com/nuxt/create-nuxt-app/issues/592)) ([33817a8](https://github.com/nuxt/create-nuxt-app/commit/33817a8bfcc4162e32030de4232defd1f99b0c33))
+* add support for dependabot ([#604](https://github.com/nuxt/create-nuxt-app/issues/604)) ([80e04e9](https://github.com/nuxt/create-nuxt-app/commit/80e04e9644ea26b2b7243d3cdb5ee968bb57c511))
+* prompt for git ([#596](https://github.com/nuxt/create-nuxt-app/issues/596)) ([ec431e8](https://github.com/nuxt/create-nuxt-app/commit/ec431e8291044c537e3bd0a321b5e516c2ec5a0c))
+* use `core-js@3` by default ([#594](https://github.com/nuxt/create-nuxt-app/issues/594)) ([146a312](https://github.com/nuxt/create-nuxt-app/commit/146a3122a20dd235608a1f513ec3e83ecae1aa40))
+
+
+
+
+
+# [3.2.0](https://github.com/nuxt/create-nuxt-app/compare/v3.1.0...v3.2.0) (2020-07-27)
+
+
+### Bug Fixes
+
+* **template:** fix package.json dev script for typescript ([#568](https://github.com/nuxt/create-nuxt-app/issues/568)) ([1f64e5a](https://github.com/nuxt/create-nuxt-app/commit/1f64e5afbb973422a34c7a64252cea9a3411664c))
+* show up an appropriate warning if the target path exists and is non-empty ([#570](https://github.com/nuxt/create-nuxt-app/issues/570)) ([21d6729](https://github.com/nuxt/create-nuxt-app/commit/21d6729c64e608bf53d87868b372d2e0d1041587))
+* **vuetify:** v-content is deprecated ([f547654](https://github.com/nuxt/create-nuxt-app/commit/f547654c4b478a2c59aa1ed49867da9251202a9a))
+
+
+### Features
+
+* **template:** update typescript ([#567](https://github.com/nuxt/create-nuxt-app/issues/567)) ([251c50d](https://github.com/nuxt/create-nuxt-app/commit/251c50d7589dd2568252ebedefebda9779eca33f))
+* add chakra-ui-vue ([#573](https://github.com/nuxt/create-nuxt-app/issues/573)) ([c9ede63](https://github.com/nuxt/create-nuxt-app/commit/c9ede63abdad60462fd3280fbd211a857e8fe1e8))
+
+
+
+
+
+# [3.1.0](https://github.com/nuxt/create-nuxt-app/compare/v3.0.0...v3.1.0) (2020-06-22)
+
+
+### Features
+
+* prepare for Nuxt 2.13 ([#529](https://github.com/nuxt/create-nuxt-app/issues/529)) ([47aa7c1](https://github.com/nuxt/create-nuxt-app/commit/47aa7c1eaf743118bb0b0d8fca78ed58bfe30b05)), closes [#509](https://github.com/nuxt/create-nuxt-app/issues/509) [#513](https://github.com/nuxt/create-nuxt-app/issues/513) [#544](https://github.com/nuxt/create-nuxt-app/issues/544) [#547](https://github.com/nuxt/create-nuxt-app/issues/547) [#540](https://github.com/nuxt/create-nuxt-app/issues/540) [#541](https://github.com/nuxt/create-nuxt-app/issues/541)
+
+
+
+
+
+# [3.0.0](https://github.com/nuxt/create-nuxt-app/compare/v2.16.0...v3.0.0) (2020-06-18)
+
+
+### Bug Fixes
+
+* **ava:** expect vm truthy as vue instance assertion ([46594db](https://github.com/nuxt/create-nuxt-app/commit/46594dbb35eefe4684adb3eb1a3f6b647d7c9850))
+* **jest:** downgrate vue-jest to v3 ([8a75b51](https://github.com/nuxt/create-nuxt-app/commit/8a75b51986ff7aa5dd4fb4135b5991b723594f89))
+* **prettier:** add stylelint-config-prettier ([50aa285](https://github.com/nuxt/create-nuxt-app/commit/50aa2851f80fc177add7185d485758dceca29d7d))
+
+
+### Features
+
+* **template:** remove dotenv module ([#544](https://github.com/nuxt/create-nuxt-app/issues/544)) ([ba93891](https://github.com/nuxt/create-nuxt-app/commit/ba938913bab21a96f29678c91897a6294003f32d))
+* add content module ([#540](https://github.com/nuxt/create-nuxt-app/issues/540)) ([9aba2f6](https://github.com/nuxt/create-nuxt-app/commit/9aba2f692e716e7e0e027cca447fa2c260df2a40))
+
+
+
+
+
+# [2.16.0](https://github.com/nuxt/create-nuxt-app/compare/v2.15.0...v2.16.0) (2020-05-18)
+
+
+### Bug Fixes
+
+* update snapshots ([b5fd723](https://github.com/nuxt/create-nuxt-app/commit/b5fd723f40c27489838984aba45ed15b58a100c8))
+* **lint:** disable eslint nuxt.config.js extend line ([#491](https://github.com/nuxt/create-nuxt-app/issues/491)) ([a7d3142](https://github.com/nuxt/create-nuxt-app/commit/a7d3142b8374338aa8e0a9aabe77fc030f4b1b93))
+* update prompts to add static in universal ([#462](https://github.com/nuxt/create-nuxt-app/issues/462)) ([71d84b1](https://github.com/nuxt/create-nuxt-app/commit/71d84b16a57147f159ce0c858a0b7bfa757d7a4b))
+* update snapshots ([2b26088](https://github.com/nuxt/create-nuxt-app/commit/2b26088546a4de0de4adae177ebf5749a2825cc7))
+* **ava:** e2e test hangs until timeout ([8393524](https://github.com/nuxt/create-nuxt-app/commit/8393524cd99db4847c339fac5e594419cba7f6bb))
+* **lint-staged:** run eslint only for staged files ([9133954](https://github.com/nuxt/create-nuxt-app/commit/91339542f6cb249e3ef3abe2445227a15d58480d))
+* vuetify footer fixed attribute toggling ([dae1734](https://github.com/nuxt/create-nuxt-app/commit/dae17340f5a3b905aad655a622d6bab21aacbafe))
+
+
+### Features
+
+* add WebdriverIO as test framework option ([#528](https://github.com/nuxt/create-nuxt-app/issues/528)) ([9a1497f](https://github.com/nuxt/create-nuxt-app/commit/9a1497f04e446a3b91b3eed1fef6273ad717b2f0))
+* **deps:** update eslint to v7 ([916f288](https://github.com/nuxt/create-nuxt-app/commit/916f2887052d97272ed25c5f339a21286520e95b))
+* **lint:** add stylelint-config-standard and separate lint scripts ([#493](https://github.com/nuxt/create-nuxt-app/issues/493)) ([8034d68](https://github.com/nuxt/create-nuxt-app/commit/8034d68109231b62e134f1fa06eb1ae72f9fd8ed))
+* **server:** upgrade fastify to v2 ([952230b](https://github.com/nuxt/create-nuxt-app/commit/952230b1227da7b05182667385eaabc4e3127281))
+* **template:** remove author and description from prompt ([#466](https://github.com/nuxt/create-nuxt-app/issues/466)) ([1d7d0c4](https://github.com/nuxt/create-nuxt-app/commit/1d7d0c4cdfdf8d2a04fd7afb12937bb3fcf61472))
+* **templates:** deprecate server templates ([#501](https://github.com/nuxt/create-nuxt-app/issues/501)) ([c60f39e](https://github.com/nuxt/create-nuxt-app/commit/c60f39e9fee49bcd4306217ec732b45d9d706c27))
+* migrate to monorepo ([#458](https://github.com/nuxt/create-nuxt-app/issues/458)) ([64991bb](https://github.com/nuxt/create-nuxt-app/commit/64991bba05b208e5078c8101c5adac55f2100ff2))
+* minimum required nodejs version is 10.20.0 ([33fbf49](https://github.com/nuxt/create-nuxt-app/commit/33fbf49aabd27fae7b4ee4e23e2e3a14357b137c))
+* **template:** support package.json and handler ([#467](https://github.com/nuxt/create-nuxt-app/issues/467)) ([ff37dc8](https://github.com/nuxt/create-nuxt-app/commit/ff37dc85672f55b2441ef6612b5917ca0b32b4f5))

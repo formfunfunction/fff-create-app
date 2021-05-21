@@ -1,10 +1,8 @@
 const isObject = (value) => {
-  return (
-    !!value &&
-    typeof value === 'object' &&
-    typeof value.getMonth !== 'function' &&
-    !Array.isArray(value)
-  )
+  return !!value &&
+  typeof value === 'object' &&
+  typeof value.getMonth !== 'function' &&
+  !Array.isArray(value)
 }
 
 const merge = (...sources) => {
@@ -15,9 +13,7 @@ const merge = (...sources) => {
       const targetValue = target[key]
       const sourceValue = object[key]
       const isMergable = isObject(targetValue) && isObject(sourceValue)
-      target[key] = isMergable
-        ? merge({}, targetValue, sourceValue)
-        : sourceValue
+      target[key] = isMergable ? merge({}, targetValue, sourceValue) : sourceValue
     }
   }
 
@@ -26,11 +22,9 @@ const merge = (...sources) => {
 
 const sortByKey = (unsortedObject) => {
   const sortedObject = {}
-  Object.keys(unsortedObject)
-    .sort()
-    .forEach((key) => {
-      sortedObject[key] = unsortedObject[key]
-    })
+  Object.keys(unsortedObject).sort().forEach((key) => {
+    sortedObject[key] = unsortedObject[key]
+  })
   return sortedObject
 }
 

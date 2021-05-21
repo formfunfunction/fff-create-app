@@ -8,12 +8,12 @@ module.exports = {
       pkg.dependencies['nuxt-edge'] = 'latest'
     }
 
-    const { scripts } = pkg
+    const { features } = generator.answers
 
     // Linter
     const lintScripts = {
-      eslint: 'npm run lint:js',
-      stylelint: 'npm run lint:style'
+      eslint: '<%= pmRun %> lint:js',
+      stylelint: '<%= pmRun %> lint:style'
     }
 
     const lintScript = Object.values(lintScripts).join(' && ')
@@ -21,10 +21,14 @@ module.exports = {
       pkg.scripts.lint = lintScript
     }
 
-    // TS
-    for (const key of Object.keys(scripts)) {
-      scripts[key] = scripts[key].replace(/^nuxt( |$)/, 'nuxt-ts$1')
+    // Modules
+    if (!features.includes('axios')) {
+      delete pkg.dependencies['@nuxtjs/axios']
     }
+    if (!features.includes('pwa')) {
+      delete pkg.dependencies['@nuxtjs/pwa']
+    }
+
     return pkg
   }
 }
