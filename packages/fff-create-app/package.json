@@ -9,7 +9,7 @@
   "dependencies": {
     "cac": "^6.7.2",
     "chalk": "^4.1.0",
-    "cna-template": "^3.6.0",
+    "@formfunfunction/nuxt-template": "^3.6.0",
     "cross-spawn": "^7.0.3",
     "envinfo": "^7.7.4",
     "lodash": "^4.17.21",

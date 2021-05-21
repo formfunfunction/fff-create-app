@@ -1,0 +1,6 @@
+54 error Error: Command failed with exit code 128: git tag v3.6.0 -m v3.6.0
+54 error fatal: tag 'v3.6.0' already exists
+54 error     at makeError (/Users/jamiemorganward/Sites/fff-create-app/node_modules/execa/lib/error.js:59:11)
+54 error     at handlePromise (/Users/jamiemorganward/Sites/fff-create-app/node_modules/execa/index.js:114:26)
+54 error     at processTicksAndRejections (internal/process/task_queues.js:93:5)
+54 error     at async Promise.all (index 0)
