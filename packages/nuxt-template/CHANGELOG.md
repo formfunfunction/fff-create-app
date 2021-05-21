@@ -15,6 +15,18 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [1.1.2](https://github.com/formfunfunction/fff-create-app/compare/v1.1.0...v1.1.2) (2020-08-22)
+
+
+
+# [1.1.0](https://github.com/formfunfunction/fff-create-app/compare/v3.2.0...v1.1.0) (2020-08-19)
+
+**Note:** Version bump only for package @formfunfunction/nuxt-template
+
+
+
+
+
 # [3.6.0](https://github.com/nuxt/create-nuxt-app/compare/v3.5.2...v3.6.0) (2021-03-19)
 
 
