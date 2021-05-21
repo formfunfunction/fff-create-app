@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.6.1](https://github.com/formfunfunction/fff-create-app/compare/v3.6.0...v3.6.1) (2021-05-21)
+
+
+### Bug Fixes
+
+* add vuetify to dependencies ([#787](https://github.com/formfunfunction/fff-create-app/issues/787)) ([3610d12](https://github.com/formfunfunction/fff-create-app/commit/3610d123fb9f2725bf7fd9c15137568159240c6d))
+* wrong package name in fff-create-app ([2e83226](https://github.com/formfunfunction/fff-create-app/commit/2e8322617848b44b11ab71e46bae7776e856208b))
+* **cna-template:** use npx to invoke locally installed binaries ([#774](https://github.com/formfunfunction/fff-create-app/issues/774)) ([a9844ee](https://github.com/formfunfunction/fff-create-app/commit/a9844eec09262138f364e03aa4165bf580f6fc8a))
+* **husky:** stdin is not a tty in git bash ([#766](https://github.com/formfunfunction/fff-create-app/issues/766)) ([807546d](https://github.com/formfunfunction/fff-create-app/commit/807546d65f107378c15503c5f1585b9131a7e469))
+* **template:** update vant template demo ([#776](https://github.com/formfunfunction/fff-create-app/issues/776)) ([de45005](https://github.com/formfunfunction/fff-create-app/commit/de45005e276ce2882b4294dbb3cb40504228cb45))
+
+
+### Features
+
+* **template:** update to husky v6 ([#715](https://github.com/formfunfunction/fff-create-app/issues/715)) ([5ee3feb](https://github.com/formfunfunction/fff-create-app/commit/5ee3feb3dd9ae776f335d835c93ad9f609344a8b))
+
+
+### Performance Improvements
+
+* use npm ci instead of npm i in GH Action Workflow ([#762](https://github.com/formfunfunction/fff-create-app/issues/762)) ([8c9b77d](https://github.com/formfunfunction/fff-create-app/commit/8c9b77deb7ef64f5a4b7a484c4a9e3ef4d0a3208))
+
+
+
+## [1.1.2](https://github.com/formfunfunction/fff-create-app/compare/v1.1.0...v1.1.2) (2020-08-22)
+
+
+
+# [1.1.0](https://github.com/formfunfunction/fff-create-app/compare/v3.2.0...v1.1.0) (2020-08-19)
+
+
+
+
+
 ## [1.1.2](https://github.com/formfunfunction/fff-create-app/compare/v1.1.0...v1.1.2) (2020-08-22)
 
 
