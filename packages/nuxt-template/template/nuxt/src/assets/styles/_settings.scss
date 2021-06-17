@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 // 01. Media Query Breakpoints
 $mobile-portrait-max: 478px;
 $mobile-landscape-max: 767px;
@@ -21,6 +23,7 @@ $white: #fff;
 
 $body-background-color: $bright-white;
 $default-font-color: $grey;
+$default-link-color: $grey;
 $default-hover-color: $grey--dark;
 
 // 03. Type
@@ -34,6 +37,6 @@ $heading-font-family: $avenir;
 $grid-columns: 12;
 $grid-gutter: 30px;
 $container-width: 1440px;
-$container-gutter-mobile: $grid-gutter;
+$container-gutter-mobile: math.div($grid-gutter, 2);
 $container-gutter-tablet: 50px;
 $container-gutter-desktop: 70px;
