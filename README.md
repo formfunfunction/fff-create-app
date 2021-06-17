@@ -78,6 +78,10 @@ Show debug logs
 
 Alias: `-v`. Show version number and exit.
 
+### `--overwrite-dir`
+
+Overwrite the target directory.
+
 ## Credits
 
 - [egoist](https://github.com/egoist)

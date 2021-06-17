@@ -4,13 +4,18 @@ module.exports = {
     browser: true,
     node: true
   },
+  parserOptions: {
+    parser: 'babel-eslint'
+  },
   extends: [
     '@nuxtjs/eslint-config-typescript',
-    'plugin:prettier/recommended',
     <%_ if (test === 'webdriverio') { _%>
     'plugin:wdio/recommended',
     <%_ } _%>
-    'plugin:nuxt/recommended'
+    'plugin:nuxt/recommended',
+    <%_ if (prettier) { _%>
+    'prettier'
+    <%_ } _%>
   ],
   plugins: [
     <%_ if (test === 'webdriverio') { _%>

@@ -20,8 +20,8 @@ module.exports = {
     const commitlint = false
     const axios = this.answers.features.includes('axios')
     const content = this.answers.features.includes('content')
-    const pm = 'npm'
-    const pmRun = 'npm run'
+    const pm = 'yarn'
+    const pmRun = 'yarn'
     const { cliOptions = {} } = this.sao.opts
     const edge = cliOptions.edge ? '-edge' : ''
 
@@ -117,14 +117,14 @@ module.exports = {
   async completed () {
     this.gitInit()
 
-    await this.npmInstall({ npmClient: 'npm' })
+    await this.npmInstall({ npmClient: 'yarn' })
 
-    spawn.sync('npm', ['run', 'lint:js', '--', '--fix'], {
+    spawn.sync('yarn', ['run', 'lint:js', '--', '--fix'].splice(2, 1), {
       cwd: this.outDir,
       stdio: 'inherit'
     })
 
-    spawn.sync('npm', ['run', 'lint:style', '--', '--fix'], {
+    spawn.sync('yarn', ['run', 'lint:style', '--', '--fix'].splice(2, 1), {
       cwd: this.outDir,
       stdio: 'inherit'
     })
@@ -133,7 +133,7 @@ module.exports = {
     const isNewFolder = this.outDir !== process.cwd()
     const relativeOutFolder = relative(process.cwd(), this.outDir)
     const cdMsg = isNewFolder ? chalk`\t{cyan cd ${relativeOutFolder}}\n` : ''
-    const pmRun = 'npm run'
+    const pmRun = 'yarn'
 
     console.log(chalk`\n🎉  {bold Successfully created project} {cyan ${this.answers.name}}\n`)
 

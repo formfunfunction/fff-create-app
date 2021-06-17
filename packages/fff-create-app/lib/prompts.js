@@ -21,10 +21,7 @@ module.exports = [
     type: 'list',
     choices: [
       { name: 'None', value: 'none' },
-      { name: 'Jest', value: 'jest' },
-      { name: 'AVA', value: 'ava' },
-      { name: 'WebdriverIO', value: 'webdriverio' },
-      { name: 'Nightwatch', value: 'nightwatch' }
+      { name: 'Jest', value: 'jest' }
     ],
     default: 'jest'
   },
