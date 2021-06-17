@@ -1,13 +1,13 @@
 {
   "name": "create-fff-nuxt-app",
-  "version": "3.6.1",
+  "version": "3.6.2",
   "description": "Create a Nuxt.js App, with opinionated defaults.",
   "bin": "lib/cli.js",
   "files": [
     "lib"
   ],
   "dependencies": {
-    "@formfunfunction/nuxt-template": "^3.6.1",
+    "@formfunfunction/nuxt-template": "^3.6.2",
     "cac": "^6.7.2",
     "chalk": "^4.1.0",
     "cross-spawn": "^7.0.3",

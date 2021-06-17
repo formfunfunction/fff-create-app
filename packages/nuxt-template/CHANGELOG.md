@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.6.2](https://github.com/formfunfunction/fff-create-app/compare/v3.6.1...v3.6.2) (2021-06-17)
+
+
+### Features
+
+* **package:** renamed package for yarn create support ([6b001bf](https://github.com/formfunfunction/fff-create-app/commit/6b001bf42fa45bc01fe068b22cc6c21bea994d25))
+
+
+
+
+
 ## [3.6.1](https://github.com/formfunfunction/fff-create-app/compare/v3.6.0...v3.6.1) (2021-05-21)
 
 

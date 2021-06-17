@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.6.2](https://github.com/formfunfunction/fff-create-app/compare/v3.6.1...v3.6.2) (2021-06-17)
+
+
+### Bug Fixes
+
+* **cli:** rephrase not empty directory error message ([#778](https://github.com/formfunfunction/fff-create-app/issues/778)) ([8186168](https://github.com/formfunfunction/fff-create-app/commit/81861685b08cdb3887fcf30f3708b387b0e1f017))
+* **jest:** jest 27 changed the default test environment to node ([8c27b44](https://github.com/formfunfunction/fff-create-app/commit/8c27b44ade0b3750cacc3a31f2c8934f6d80f515))
+* **template:** nodemismatch error in ios safari ([#770](https://github.com/formfunfunction/fff-create-app/issues/770)) ([41463d1](https://github.com/formfunfunction/fff-create-app/commit/41463d16912e0026ac533cb0b8441cb7a9e5c8b8))
+* **templates:** remove not being maintained vuesax ([#795](https://github.com/formfunfunction/fff-create-app/issues/795)) ([e7211b3](https://github.com/formfunfunction/fff-create-app/commit/e7211b3c1d2a683c2376cfa8f2437555ccf526c7))
+* **templates:** remove not recommended eslint-plugin-prettier ([#797](https://github.com/formfunfunction/fff-create-app/issues/797)) ([5d8c498](https://github.com/formfunfunction/fff-create-app/commit/5d8c49878c98cc2842b65fa8edaa201d9d3bc0aa))
+* **templates:** use PascalCase component names in single-file components ([ed17e67](https://github.com/formfunfunction/fff-create-app/commit/ed17e67e1499a69f9c6eb364c0df6b64cd5a2a19))
+
+
+### Features
+
+* **create-nuxt-app:** add --overwrite-dir flag ([#799](https://github.com/formfunfunction/fff-create-app/issues/799)) ([e45bdbb](https://github.com/formfunfunction/fff-create-app/commit/e45bdbb433fbb8d242630f8062dc5d76c65f8f2f))
+* **package:** renamed package for yarn create support ([6b001bf](https://github.com/formfunfunction/fff-create-app/commit/6b001bf42fa45bc01fe068b22cc6c21bea994d25))
+* update design ([#792](https://github.com/formfunfunction/fff-create-app/issues/792)) ([b7d2db9](https://github.com/formfunfunction/fff-create-app/commit/b7d2db9f10ff2bb1fedbe65800f1ac43cb84fad1))
+
+
+
+
+
 ## [3.6.1](https://github.com/formfunfunction/fff-create-app/compare/v3.6.0...v3.6.1) (2021-05-21)
 
 
