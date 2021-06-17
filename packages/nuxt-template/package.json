@@ -1,7 +1,7 @@
 {
   "name": "@formfunfunction/nuxt-template",
   "version": "3.6.1",
-  "description": "Templates for fff-create-app.",
+  "description": "Templates for create-fff-nuxt-app.",
   "files": [
     "template"
   ],

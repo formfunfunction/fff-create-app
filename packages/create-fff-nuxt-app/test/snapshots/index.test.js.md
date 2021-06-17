@@ -1,4 +1,4 @@
-# Snapshot report for `packages/fff-create-app/test/index.test.js`
+# Snapshot report for `packages/create-fff-nuxt-app/test/index.test.js`
 
 The actual snapshot is saved in `index.test.js.snap`.
 

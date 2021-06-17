@@ -1,5 +1,5 @@
 {
-  "name": "fff-create-app",
+  "name": "create-fff-nuxt-app",
   "version": "3.6.1",
   "description": "Create a Nuxt.js App, with opinionated defaults.",
   "bin": "lib/cli.js",

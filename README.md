@@ -11,19 +11,19 @@
 Make sure you have [npx](https://www.npmjs.com/package/npx) installed (`npx` is shipped by default since [npm](https://www.npmjs.com/get-npm) `5.2.0`)
 
 ```bash
-npx fff-create-app <my-project>
+npx create-fff-nuxt-app <my-project>
 ```
 
 Or starting with npm v6.1 you can do:
 
 ```bash
-npm init fff-create-app@latest <my-project>
+npm init create-fff-nuxt-app@latest <my-project>
 ```
 
 Or with [yarn](https://yarnpkg.com/en/):
 
 ```bash
-yarn create fff-create-app <my-project>
+yarn create fff-nuxt-app <my-project>
 ```
 
 ## Features :tada:
